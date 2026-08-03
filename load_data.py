@@ -2,6 +2,9 @@ import pandas as pd
 
 # FUNCTIONS TO LOAD IN THE DEMAND DATA
 
+HOLIDAYS = ["2026-06-01"]  # King's Birthday
+
+
 def load_demand_raw():
     """Wide format, exactly as it is on disk."""
     return pd.read_csv("data/FoodstuffsDemand2026.csv")
@@ -22,11 +25,13 @@ def find_outliers(long_df, z_thresh=4):
     return long_df[stats.abs() > z_thresh]
 
 
-def clean_demand(long_df):
-    """Apply known data-entry fixes (misplaced decimal -> divide by 10)."""
+def clean_demand(long_df, holidays=HOLIDAYS):
+    """Apply known data-entry fixes (misplaced decimal -> divide by 10)
+    and remove public holidays."""
     df = long_df.copy()
     outliers = find_outliers(df)
     df.loc[outliers.index, "pallets"] = df.loc[outliers.index, "pallets"] / 10
+    df = df[~df["date"].isin(pd.to_datetime(holidays))]
     return df
 
 
@@ -35,10 +40,9 @@ def load_demand():
     return clean_demand(melt_demand(load_demand_raw()))
 
 
-
-
 def load_locations():
     return pd.read_csv("data/FoodstuffsLocations.csv")
+
 
 def load_durations():
     return pd.read_csv("data/FoodstuffsDurations2026.csv")
