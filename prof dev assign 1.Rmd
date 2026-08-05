@@ -1,0 +1,111 @@
+---
+title: "Christopher Mara OR Prof Dev Assign 1"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r}
+library(lubridate)
+library(tidyverse)
+library(s20x)
+library(ggplot2)
+foodstuffs.tibble = read_csv("Data/FoodstuffsDemand2026.csv")
+head(foodstuffs.tibble)
+```
+
+```{r}
+foodstuffs_pivot = foodstuffs.tibble |>
+  pivot_longer(cols = c(2:57), names_to = "Date", values_to = "Demand")
+head(foodstuffs_pivot)
+```
+```{r}
+foodstuffs_pivot = foodstuffs_pivot |>
+  mutate(Chain = ifelse(startsWith(Supermarket, "Four"), "Four Square", ifelse(startsWith(Supermarket, "Pak"), "Pak 'n Save", "New World"))) |>
+  mutate(Date = as.Date(Date, format = "%d/%m/%Y"))
+head(foodstuffs_pivot)
+```
+
+```{r}
+foodstuffs_pivot |>
+  group_by(Date) |>
+  summarise(MeanDemand = mean(Demand, na.rm = TRUE)) |>
+  ggplot() +
+  aes(x = Date, y = MeanDemand) +
+  geom_line(colour = "steelblue") +
+  labs(title = "Average Demand Over Time",
+       y = "Average Demand")
+```
+
+The average Demand over time across the stores cycles periodically, dropping to 0 every week, and peaking around 6
+
+
+```{r}
+foodstuffs_pivot |>
+  group_by(Chain, Supermarket) |>
+  summarise(MeanDemand = mean(Demand, na.rm = TRUE)) |>
+  ggplot() + 
+  aes(x = Chain, y = MeanDemand, fill = Chain) +
+  geom_boxplot() +
+  labs(title = "Average Demand per Supermarket", y = "Mean Demand", x = "Supermarket Chain")
+head(foodstuffs_pivot)
+```
+
+Pak'n Save has the highest center, followed by New World, followed by Four Square
+Pak'N Save has slightly larger spread
+all three are slightly right-skewed
+
+```{r}
+foodstuffs2 = foodstuffs_pivot |>
+  mutate(Date = as.Date(Date, format = "%d/%m/%Y"))
+head(foodstuffs2)
+head(foodstuffs_pivot)
+```
+
+```{r}
+#mean per day
+foodstuffs_pivot |>
+  mutate(Day = wday(Date, label = TRUE)) |>
+  group_by(Day) |>
+  summarise(MeanDemand = mean(Demand)) |>
+  ggplot() +
+  aes(x = Day, y = MeanDemand, fill = Day) +
+  geom_col(fill = "steelblue")
+```
+```{r}
+foodstuffs_pivot = foodstuffs_pivot|>
+  mutate(Day = wday(Date, label = TRUE)) |>
+  mutate(Demand = ifelse(Demand >= 14 & Demand%%10 == 0, Demand/10, Demand)) |>
+  mutate(Demand = ifelse(Demand >= 14, NA, Demand)) |>
+  mutate(Demand = ifelse(Demand <= 1, NA, Demand))
+foodstuffs_pivot = foodstuffs_pivot[foodstuffs_pivot$Day != "Sun", ]
+head(foodstuffs_pivot)
+foodstuffs_pivot = foodstuffs_pivot[foodstuffs_pivot$Date != as.Date("2026-06-01"), ]
+```
+```{r}
+#mean per day
+foodstuffs_pivot |>
+  mutate(Day = wday(Date, label = TRUE)) |>
+  group_by(Day) |>
+  summarise(MeanDemand = mean(Demand, na.rm=TRUE)) |>
+  ggplot() +
+  aes(x = Day, y = MeanDemand, fill = Day) +
+  geom_col(fill = "steelblue")
+```
+Possible ways to continue may be to create means + standard error for each store for each day of the week
+```{r}
+foodstuffs_pivot |>
+  group_by(Supermarket) |>
+  summarise(MeanDemand = mean(Demand, na.rm=TRUE), StanDev = sd(Demand, na.rm=TRUE))
+```
+```{r}
+head(foodstuffs_pivot)
+foodstuffs_pivot |>
+  ggplot() +
+  aes(x = Date, y = Demand, color = Supermarket) +
+  geom_line() +
+  labs(title = "Average Demand Over Time",
+       y = "Average Demand") 
+```
+
+
