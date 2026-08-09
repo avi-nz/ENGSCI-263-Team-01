@@ -46,4 +46,4 @@ def load_locations():
 
 
 def load_durations():
-    return pd.read_csv("data/FoodstuffsDurations2026.csv")
+    return pd.read_csv("data/FoodstuffsDurations2026.csv", index_col=0)
