@@ -27,11 +27,12 @@ def find_outliers(long_df, z_thresh=4):
 
 def clean_demand(long_df, holidays=HOLIDAYS):
     """Apply known data-entry fixes (misplaced decimal -> divide by 10)
-    and remove public holidays."""
+    and remove public holidays and the point where demand exceeds capacity."""
     df = long_df.copy()
     outliers = find_outliers(df)
     df.loc[outliers.index, "pallets"] = df.loc[outliers.index, "pallets"] / 10
     df = df[~df["date"].isin(pd.to_datetime(holidays))]
+    df = df[~((df["store"] == "Pak 'n Save Albany") & (df["date"] == pd.to_datetime("2026-06-03")))]
     return df
 
 
