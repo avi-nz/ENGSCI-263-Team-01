@@ -72,13 +72,13 @@ def generate_feasible_routes(
                 continue
 
             # calculating new travel time with introduction of new node
-            leg_travel_time = float(s_start.loc[next_node])
+            leg_travel_time = float(df_start.loc[next_node])
             next_service_time = next_demand * time_per_pallet
             new_accumulated_time = accumulated_time + leg_travel_time + next_service_time
             total_route_time = new_accumulated_time + float(df_origin.loc[next_node])
 
             # checking it is within time constraint
-            if total_route_time > max_time:
+            if total_route_time <= max_time:
                 new_path = current_path + [next_node]
                 feasible_routes.append({
                     "route": ["Origin", new_path, "Origin"],
@@ -89,9 +89,18 @@ def generate_feasible_routes(
 
                 dfs(new_path, new_load, new_accumulated_time)
 
-            dfs(current_path=[start_node], current_load=start_demand, accumulated_time =initial_accumulated_time)
+    dfs(current_path=[start_node], current_load=start_demand, accumulated_time =initial_accumulated_time)
 
-            return feasible_routes
+    return feasible_routes
 
+def all_feasible_routes(df_demand, df_durations, df_origin):
+    """"""
+    feasible_routes = []
 
+    for col_name, col_data in df_durations.items():
+        temp = generate_feasible_routes(col_name, df_origin, col_data, df_demand)
+        feasible_routes.append(temp)
 
+    return feasible_routes
+
+routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
