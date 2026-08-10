@@ -24,6 +24,13 @@ order = warehouse_df.index.tolist()
 df_week_avg = week_avg.loc[order]
 df_sat_avg = sat_avg.loc[order]
 
+# creating the saturday dataframes with demands that are zero removed
+zero_indices = df_sat_avg.index[df_sat_avg['huber_pallets_round'] == 0].tolist()
+df_sat_avg = df_sat_avg.drop(zero_indices)
+warehouse_df_sat = warehouse_df.drop(zero_indices)
+durations_df_sat = durations_df.drop(zero_indices)
+durations_df_sat = durations_df_sat.drop(columns = zero_indices)
+
 # normalizing to series
 df_week_avg = df_week_avg.squeeze()
 df_sat_avg = df_sat_avg.squeeze()
@@ -103,4 +110,12 @@ def all_feasible_routes(df_demand, df_durations, df_origin):
 
     return feasible_routes
 
+# generating routes
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
+routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
+
+'''
+# uncomment this if u want to see the data
+print(routes_weekdays)
+print(routes_sat)
+'''
