@@ -41,6 +41,9 @@ def weekday_average(df):
         .apply(huber_mean)
         .reset_index(name="huber_mean_pallets")
     )
+    weekday_average["huber_pallets_ceil"] = np.ceil(
+        weekday_average["huber_mean_pallets"]
+    ).astype(int)
     return weekday_average
 
 def saturday_average(df):
@@ -51,6 +54,9 @@ def saturday_average(df):
         .apply(huber_mean)
         .reset_index(name="huber_mean_pallets")
     )
+    saturday_average["huber_pallets_round"] = np.round(
+        saturday_average["huber_mean_pallets"]
+    ).astype(int)
     return saturday_average
 
 
