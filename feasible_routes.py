@@ -1,5 +1,6 @@
 from demand_averages import weekday_average, saturday_average
 from load_data import load_durations, load_demand
+from typing import List, Dict, Any
 import pandas as pd
 
 # loading data
@@ -22,5 +23,75 @@ durations_df = durations_df.drop('Warehouse')
 order = warehouse_df.index.tolist()
 df_week_avg = week_avg.loc[order]
 df_sat_avg = sat_avg.loc[order]
+
+# normalizing to series
+df_week_avg = df_week_avg.squeeze()
+df_sat_avg = df_sat_avg.squeeze()
+warehouse_df = warehouse_df.squeeze()
+
+def generate_feasible_routes(
+        start_node: int | str,
+        df_origin : pd.DataFrame,
+        df_start : pd.DataFrame,
+        df_demand : pd.DataFrame,
+        max_capacity: float = 14.0,
+        max_time: float = 12600.0,
+        time_per_pallet: float = 1080.0
+) -> List[Dict[str, Any]]:
+    """"""
+    # making start node into a series
+    s_start = df_start[start_node]
+    all_nodes = list(df_demand.index)
+
+    # initialising starting values
+    start_demand = float(df_demand.loc[start_node])
+    travel_from_origin = float(df_origin.loc[start_node])
+    service_time_start = start_demand * time_per_pallet
+    initial_accumulated_time = travel_from_origin + service_time_start
+    base_route_time = initial_accumulated_time + travel_from_origin
+
+    # adding base one store route: [Origin -> start_node -> Origin]
+    feasible_routes = [{
+        "route": ["Origin", start_node, "Origin"],
+        "stops": [start_node],
+        "total_pallets": start_demand,
+        "total_time_sec": base_route_time
+    }]
+
+    def dfs(current_path: List[int | str], current_load: float, accumulated_time: float):
+        for next_node in all_nodes:
+            if next_node in current_path:
+                continue
+
+            # calculating potential load
+            next_demand = float(df_demand.loc[next_node])
+            new_load = current_load + next_demand
+
+            # checking capacity constraint
+            if new_load > max_capacity:
+                continue
+
+            # calculating new travel time with introduction of new node
+            leg_travel_time = float(s_start.loc[next_node])
+            next_service_time = next_demand * time_per_pallet
+            new_accumulated_time = accumulated_time + leg_travel_time + next_service_time
+            total_route_time = new_accumulated_time + float(df_origin.loc[next_node])
+
+            # checking it is within time constraint
+            if total_route_time > max_time:
+                new_path = current_path + [next_node]
+                feasible_routes.append({
+                    "route": ["Origin", new_path, "Origin"],
+                    "stops": new_path,
+                    "total_pallets": new_load,
+                    "total_time_sec": total_route_time
+                })
+
+                dfs(new_path, new_load, new_accumulated_time)
+
+            dfs(current_path=[start_node], current_load=start_demand, accumulated_time =initial_accumulated_time)
+
+            return feasible_routes
+
 
 
