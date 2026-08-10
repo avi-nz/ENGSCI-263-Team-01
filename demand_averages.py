@@ -36,27 +36,26 @@ def huber_mean(series, t=1.345):
 def weekday_average(df):
     """Calculates the weekday average demand"""
     weekday_df = weekday_demand(df)
-    weekday_average = (
+    w_avg = (
         weekday_df.groupby("store")["pallets"]
         .apply(huber_mean)
         .reset_index(name="huber_mean_pallets")
     )
-    weekday_average["huber_pallets_ceil"] = np.ceil(
-        weekday_average["huber_mean_pallets"]
+    w_avg["huber_pallets_ceil"] = np.ceil(
+        w_avg["huber_mean_pallets"]
     ).astype(int)
-    return weekday_average
+    return w_avg
 
 def saturday_average(df):
     """Calculates the saturday average demand"""
     saturday_df = saturday_demand(df)
-    saturday_average = (
+    s_avg = (
         saturday_df.groupby("store")["pallets"]
         .apply(huber_mean)
         .reset_index(name="huber_mean_pallets")
     )
-    saturday_average["huber_pallets_round"] = np.round(
-        saturday_average["huber_mean_pallets"]
+    s_avg["huber_pallets_round"] = np.round(
+        s_avg["huber_mean_pallets"]
     ).astype(int)
-    return saturday_average
-
+    return s_avg
 
