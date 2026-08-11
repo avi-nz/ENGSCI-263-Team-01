@@ -43,8 +43,13 @@ budget_df = pd.concat([weekday_table, saturday_table], ignore_index=True)
 
 fig, ax = plt.subplots(figsize=(7, 4.5))
 for label, group in budget_df.groupby("day_type"):
+    if label == "Weekday":
+        linewidth = 1.0
+    else:
+        linewidth = 2.5
+
     ax.step(group["num_stores"], group["driving_budget_min"], where="post",
-            marker="o", label=label)
+            marker="o", linewidth=linewidth, label=label)
 ax.axhline(0, color="black", linewidth=1, linestyle="--")
 ax.set_xlabel("Stores visited")
 ax.set_ylabel("Remaining budget after unloading (min)")
