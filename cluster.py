@@ -1,5 +1,7 @@
 from demand_averages import weekday_average, saturday_average
 from load_data import load_durations, load_demand
+import pandas as pd
+import matplotlib.pyplot as plt
 
 durations_df = load_durations()
 
@@ -27,13 +29,25 @@ def driving_budget_per_leg(avg_pallets_per_store, num_stores_on_route,
     num_legs = num_stores_on_route + 1
     return driving_budget_min, driving_budget_min / num_legs
 
+def budget_table(avg_pallets_per_store, label, n_range=range(0, 9)):
+    rows = []
+    for n in n_range:
+        budget, per_leg = driving_budget_per_leg(avg_pallets_per_store, n)
+        rows.append({"day_type": label, "num_stores": n,
+                      "driving_budget_min": budget, "per_leg_min": per_leg})
+    return pd.DataFrame(rows)
 
-for n in range(1, 9):
-    budget, per_leg = driving_budget_per_leg(weekday_avg_df["huber_mean_pallets"].mean(), n)
-    print(f"{n} stores: total driving budget = {budget:.1f} min, per leg = {per_leg:.1f} min")
+weekday_table = budget_table(weekday_avg_df["huber_mean_pallets"].mean(), "Weekday")
+saturday_table = budget_table(saturday_avg_df["huber_mean_pallets"].mean(), "Saturday")
+budget_df = pd.concat([weekday_table, saturday_table], ignore_index=True)
 
-print("-"*50)
-
-for n in range(1, 9):
-    budget, per_leg = driving_budget_per_leg(saturday_avg_df["huber_mean_pallets"].mean(), n)
-    print(f"{n} stores: total driving budget = {budget:.1f} min, per leg = {per_leg:.1f} min")
+fig, ax = plt.subplots(figsize=(7, 4.5))
+for label, group in budget_df.groupby("day_type"):
+    ax.plot(group["num_stores"], group["driving_budget_min"], marker="o", label=label)
+ax.axhline(0, color="black", linewidth=1, linestyle="--")
+ax.set_xlabel("Stores on route")
+ax.set_ylabel("Remaining budget after unloading (min)")
+ax.set_title("Trip budget consumed by unloading, by route size")
+ax.legend()
+plt.savefig('driving_budget_graph.png')
+plt.show()
