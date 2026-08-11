@@ -54,7 +54,7 @@ def saturday_average(df):
         .apply(huber_mean)
         .reset_index(name="huber_mean_pallets")
     )
-    s_avg["huber_pallets_round"] = np.ceil(
+    s_avg["huber_pallets_round"] = np.round(
         s_avg["huber_mean_pallets"]
     ).astype(int)
     return s_avg
