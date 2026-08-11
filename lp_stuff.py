@@ -18,8 +18,8 @@ For each of the weekday/sat:
     1. Index each store (Done)
     2. Index each feasible route (Done)
     3. create cost vector for each route (220/3600*duration) (Done)
-    4. create cost vector for using wet-lease truck for each route (ceilng(duration/7200)*1400)
-    5. create cost vector for skipping stores (1500 for PaknSave, 800 for every other entry) (this is for fuel reduction)
+    4. create cost vector for using wet-lease truck for each route (ceilng(duration/7200)*1400) (done)
+    5. create cost vector for skipping stores (1500 for PaknSave, 800 for every other entry) (this is for fuel reduction) (done)
     6. create a matrix A where a_ij = 1 if route i contains store j, 0 otherwise (Done)
 
 This needs to be done separately for weekdays and for saturdays
@@ -31,14 +31,12 @@ for i in range(len(routes_weekdays)):
   for j in range(len(temp)):
     num_routes += 1
 
-print(num_routes)
-
 stores_weekday = durations_df.index.tolist()
 routes_index = [str(i) for i in range(num_routes)]
 
 #ok building the matrix, wish me luck
 A_weekdays = [[0 for j in range(num_routes)] for i in range(len(stores_weekday))]
-#A[i][j] = 1 if store
+#A[i][j] = 1 if store i is contained within route j
 
 #This triple nested loop is needed to access every route inside routes_weekdays and routes_sat
 #there is probably more efficient notation, but I can't be bothered
@@ -52,13 +50,28 @@ for i in range(len(routes_weekdays)):
 print(routes_weekdays)
 
 #Base cost vector for each route
+#ok guys do I calculate the cost by the second or do I round up the hour or something
 route_cost = [0 for i in range(num_routes)]
 k = 0
 for i in range(len(routes_weekdays)):
-  temp = routes_weekdays[i]
-  for j in range(len(temp)):
-    temp2 = temp[j]
-    route_cost[k] += temp2["total_time_sec"]*220/3600
+  for j in range(len(routes_weekdays[i])):
+    route_cost[k] += routes_weekdays[i][j]["total_time_sec"]*220/3600
+    if route_cost[k] > 4*220:
+      route_cost[k] = 10**10
     k+=1
 
-print(route_cost)
+lease_route_cost = [0 for i in range(num_routes)]
+k = 0
+for i in range(len(routes_weekdays)):
+  for j in range(len(routes_weekdays[i])):
+    lease_route_cost[k] += 1400*math.ceil(routes_weekdays[i][j]["total_time_sec"]/7200)
+    if route_cost[k] > 4*220:
+      route_cost[k] = 10**10
+    k+=1
+
+exclusion_cost = [0 for i in range(len(stores_weekday))]
+for i in range(len(stores_weekday)):
+  if stores_weekday[i][0] == "P":
+    exclusion_cost[i] = 1500
+  else:
+    exclusion_cost[i] = 800
