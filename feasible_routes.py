@@ -114,7 +114,8 @@ def all_feasible_routes(df_demand, df_durations, df_origin):
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
 routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
 
-
+"""
 # uncomment this if u want to see the data
 print(routes_weekdays)
 print(routes_sat)
+"""
