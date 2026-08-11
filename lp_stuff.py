@@ -1,6 +1,7 @@
 from feasible_routes import *
 from pulp import *
 import math
+import csv
 
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
 routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
@@ -38,7 +39,7 @@ routes_index = [str(i) for i in range(num_routes)]
 A_weekdays = [[0 for j in range(num_routes)] for i in range(len(stores_weekday))]
 #A[i][j] = 1 if store i is contained within route j
 
-#This triple nested loop is needed to access every route inside routes_weekdays and routes_sat
+#This quadruple iterative variable nested loop is needed to access every route inside routes_weekdays and routes_sat
 #there is probably more efficient notation, but I can't be bothered
 l = 0
 for i in range(len(routes_weekdays)):
@@ -78,9 +79,10 @@ for i in range(len(stores_weekday)):
 
 #LP FOR WEEKDAYS
 A_weekdays = makeDict([stores_weekday, routes_index], A_weekdays, 0)
-#route_cost = makeDict()
+
 vars_x = LpVariable.dicts("Route", routes_index, 0, None, LpBinary)
 vars_y = LpVariable.dicts("Route_Lease", routes_index, 0, None, LpBinary)
+
 prob = LpProblem("Weekdays", LpMinimize)
 prob += lpSum([vars_x[routes_index[i]]*route_cost[i] + vars_y[routes_index[i]]*lease_route_cost[i] for i in range(len(routes_index))]), "Cost of Routes"
 
@@ -102,6 +104,9 @@ for v in prob.variables():
 
 print("Total Cost = ", value(prob.objective))
 
+flat_routes = [item for sublist in routes_weekdays for item in sublist]
+
+
 """
 #THESE ARE ALL MY ATTEMPTS AT DEBUGGING THE CODE, WILL DELETE LATER
 
@@ -120,3 +125,35 @@ flat_list = [item for sublist in routes_weekdays for item in sublist]
 print(flat_list)
 print(len(flat_list))
 """
+
+#LP FOR WEEKDAYS with fuel reduction
+
+vars_x = LpVariable.dicts("Route", routes_index, 0, None, LpBinary)
+vars_y = LpVariable.dicts("Route_Lease", routes_index, 0, None, LpBinary)
+vars_z = LpVariable.dicts("Skipped_Store", stores_weekday, 0, None, LpBinary)
+prob_fr = LpProblem("Weekdays_Fuel_Reduction", LpMinimize)
+prob_fr += lpSum([vars_x[routes_index[i]]*route_cost[i] +
+               vars_y[routes_index[i]]*lease_route_cost[i]
+               for i in range(len(routes_index))] +
+                 [vars_z[stores_weekday[j]]*exclusion_cost[j] for j in range(len(stores_weekday))]), "Cost of Routes and Skipping"
+
+#each store is either visited once or skipped
+for i in stores_weekday:
+  prob_fr += lpSum([vars_x[j]*A_weekdays[i][j] + vars_y[j]*A_weekdays[i][j] for j in routes_index] + [vars_z[i]])==1, "%s is visited once or skipped" % i
+
+prob_fr += lpSum([vars_x[i]-vars_y[i] for i in routes_index])<=40, "Less than 40 trucks total are used"
+
+#the logic might need to be different here for saturday since we are already skipping stores
+prob_fr += lpSum([vars_z[i] for i in stores_weekday])<=0.2*len(stores_weekday), "Less than 20% of stores are skipped"
+print(prob_fr)
+
+prob_fr.writeLP("Weekdays_Fuel_Reduction.lp")
+
+prob_fr.solve()
+print("Status: ", LpStatus[prob_fr.status])
+
+for v in prob_fr.variables():
+  if v.varValue != 0:
+    print(v.name, "=", v.varValue)
+
+print("Total Cost = ", value(prob_fr.objective))
