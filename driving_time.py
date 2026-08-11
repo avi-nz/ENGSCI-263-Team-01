@@ -43,11 +43,12 @@ budget_df = pd.concat([weekday_table, saturday_table], ignore_index=True)
 
 fig, ax = plt.subplots(figsize=(7, 4.5))
 for label, group in budget_df.groupby("day_type"):
-    ax.plot(group["num_stores"], group["driving_budget_min"], marker="o", label=label)
+    ax.step(group["num_stores"], group["driving_budget_min"], where="post",
+            marker="o", label=label)
 ax.axhline(0, color="black", linewidth=1, linestyle="--")
-ax.set_xlabel("Stores on route")
+ax.set_xlabel("Stores visited")
 ax.set_ylabel("Remaining budget after unloading (min)")
 ax.set_title("Trip budget consumed by unloading, by route size")
 ax.legend()
-plt.savefig('driving_budget_graph.png')
+plt.savefig('plots/driving_budget_graph.png')
 plt.show()
