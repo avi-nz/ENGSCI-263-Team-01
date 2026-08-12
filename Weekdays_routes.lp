@@ -284,57 +284,7 @@ Less_than_40_trucks_total_are_used: Route_0 + Route_1 + Route_10 + Route_100
  + Route_77 + Route_78 + Route_79 + Route_8 + Route_80 + Route_81 + Route_82
  + Route_83 + Route_84 + Route_85 + Route_86 + Route_87 + Route_88 + Route_89
  + Route_9 + Route_90 + Route_91 + Route_92 + Route_93 + Route_94 + Route_95
- + Route_96 + Route_97 + Route_98 + Route_99 - Route_Lease_0 - Route_Lease_1
- - Route_Lease_10 - Route_Lease_100 - Route_Lease_101 - Route_Lease_102
- - Route_Lease_103 - Route_Lease_104 - Route_Lease_105 - Route_Lease_106
- - Route_Lease_107 - Route_Lease_108 - Route_Lease_109 - Route_Lease_11
- - Route_Lease_110 - Route_Lease_111 - Route_Lease_112 - Route_Lease_113
- - Route_Lease_114 - Route_Lease_115 - Route_Lease_116 - Route_Lease_117
- - Route_Lease_118 - Route_Lease_119 - Route_Lease_12 - Route_Lease_120
- - Route_Lease_121 - Route_Lease_122 - Route_Lease_123 - Route_Lease_124
- - Route_Lease_125 - Route_Lease_126 - Route_Lease_127 - Route_Lease_128
- - Route_Lease_129 - Route_Lease_13 - Route_Lease_130 - Route_Lease_131
- - Route_Lease_132 - Route_Lease_133 - Route_Lease_134 - Route_Lease_135
- - Route_Lease_136 - Route_Lease_137 - Route_Lease_138 - Route_Lease_139
- - Route_Lease_14 - Route_Lease_140 - Route_Lease_141 - Route_Lease_142
- - Route_Lease_143 - Route_Lease_144 - Route_Lease_145 - Route_Lease_146
- - Route_Lease_147 - Route_Lease_148 - Route_Lease_149 - Route_Lease_15
- - Route_Lease_150 - Route_Lease_151 - Route_Lease_152 - Route_Lease_153
- - Route_Lease_154 - Route_Lease_155 - Route_Lease_156 - Route_Lease_157
- - Route_Lease_158 - Route_Lease_159 - Route_Lease_16 - Route_Lease_160
- - Route_Lease_161 - Route_Lease_162 - Route_Lease_163 - Route_Lease_164
- - Route_Lease_165 - Route_Lease_166 - Route_Lease_167 - Route_Lease_168
- - Route_Lease_169 - Route_Lease_17 - Route_Lease_170 - Route_Lease_171
- - Route_Lease_172 - Route_Lease_173 - Route_Lease_174 - Route_Lease_175
- - Route_Lease_176 - Route_Lease_177 - Route_Lease_178 - Route_Lease_179
- - Route_Lease_18 - Route_Lease_180 - Route_Lease_181 - Route_Lease_182
- - Route_Lease_183 - Route_Lease_184 - Route_Lease_185 - Route_Lease_186
- - Route_Lease_187 - Route_Lease_188 - Route_Lease_189 - Route_Lease_19
- - Route_Lease_190 - Route_Lease_191 - Route_Lease_192 - Route_Lease_193
- - Route_Lease_194 - Route_Lease_195 - Route_Lease_196 - Route_Lease_197
- - Route_Lease_198 - Route_Lease_199 - Route_Lease_2 - Route_Lease_20
- - Route_Lease_21 - Route_Lease_22 - Route_Lease_23 - Route_Lease_24
- - Route_Lease_25 - Route_Lease_26 - Route_Lease_27 - Route_Lease_28
- - Route_Lease_29 - Route_Lease_3 - Route_Lease_30 - Route_Lease_31
- - Route_Lease_32 - Route_Lease_33 - Route_Lease_34 - Route_Lease_35
- - Route_Lease_36 - Route_Lease_37 - Route_Lease_38 - Route_Lease_39
- - Route_Lease_4 - Route_Lease_40 - Route_Lease_41 - Route_Lease_42
- - Route_Lease_43 - Route_Lease_44 - Route_Lease_45 - Route_Lease_46
- - Route_Lease_47 - Route_Lease_48 - Route_Lease_49 - Route_Lease_5
- - Route_Lease_50 - Route_Lease_51 - Route_Lease_52 - Route_Lease_53
- - Route_Lease_54 - Route_Lease_55 - Route_Lease_56 - Route_Lease_57
- - Route_Lease_58 - Route_Lease_59 - Route_Lease_6 - Route_Lease_60
- - Route_Lease_61 - Route_Lease_62 - Route_Lease_63 - Route_Lease_64
- - Route_Lease_65 - Route_Lease_66 - Route_Lease_67 - Route_Lease_68
- - Route_Lease_69 - Route_Lease_7 - Route_Lease_70 - Route_Lease_71
- - Route_Lease_72 - Route_Lease_73 - Route_Lease_74 - Route_Lease_75
- - Route_Lease_76 - Route_Lease_77 - Route_Lease_78 - Route_Lease_79
- - Route_Lease_8 - Route_Lease_80 - Route_Lease_81 - Route_Lease_82
- - Route_Lease_83 - Route_Lease_84 - Route_Lease_85 - Route_Lease_86
- - Route_Lease_87 - Route_Lease_88 - Route_Lease_89 - Route_Lease_9
- - Route_Lease_90 - Route_Lease_91 - Route_Lease_92 - Route_Lease_93
- - Route_Lease_94 - Route_Lease_95 - Route_Lease_96 - Route_Lease_97
- - Route_Lease_98 - Route_Lease_99 <= 40
+ + Route_96 + Route_97 + Route_98 + Route_99 <= 40
 New_World_Albany_is_visited_once: Route_0 + Route_Lease_0 = 1
 New_World_Birkenhead_is_visited_once: Route_1 + Route_Lease_1 = 1
 New_World_Botany_is_visited_once: Route_2 + Route_Lease_2 = 1

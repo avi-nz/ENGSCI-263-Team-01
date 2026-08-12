@@ -90,13 +90,11 @@ prob += lpSum([vars_x[routes_index[i]]*route_cost[i] + vars_y[routes_index[i]]*l
 for i in stores_weekday:
   prob += lpSum(vars_x[j]*A_weekdays[i][j] + vars_y[j]*A_weekdays[i][j] for j in routes_index)==1, "%s is visited once" % i
 
-prob += lpSum([vars_x[i]-vars_y[i] for i in routes_index])<=40, "Less than 40 trucks total are used"
-print(prob)
+prob += lpSum([vars_x[i] for i in routes_index])<=40, "Less than 40 trucks total are used"
 
 prob.writeLP("Weekdays_routes.lp")
 
 prob.solve()
-print("Status: ", LpStatus[prob.status])
 
 chosen_routes = []
 leased_routes = []
@@ -155,16 +153,14 @@ prob_fr += lpSum([vars_x[routes_index[i]]*route_cost[i] +
 for i in stores_weekday:
   prob_fr += lpSum([vars_x[j]*A_weekdays[i][j] + vars_y[j]*A_weekdays[i][j] for j in routes_index] + [vars_z[i]])==1, "%s is visited once or skipped" % i
 
-prob_fr += lpSum([vars_x[i]-vars_y[i] for i in routes_index])<=40, "Less than 40 trucks total are used"
+prob_fr += lpSum([vars_x[i] for i in routes_index])<=40, "Less than 40 trucks total are used"
 
 #the logic might need to be different here for saturday since we are already skipping stores
 prob_fr += lpSum([vars_z[i] for i in stores_weekday])<=0.2*len(stores_weekday), "Less than 20% of stores are skipped"
-print(prob_fr)
 
 prob_fr.writeLP("Weekdays_Fuel_Reduction.lp")
 
 prob_fr.solve()
-print("Status: ", LpStatus[prob_fr.status])
 
 for v in prob_fr.variables():
   if v.varValue != 0:
