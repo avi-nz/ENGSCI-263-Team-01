@@ -111,7 +111,7 @@ for v in prob.variables():
 
 with open("stored_routes/chosen_routes_sat.txt", "w") as file:
   json.dump(chosen_routes, file)
-with open("stored_routes/leased_routes_sat.", "w") as file:
+with open("stored_routes/leased_routes_sat.txt", "w") as file:
   json.dump(leased_routes, file)
 
 print("Total Cost = ", value(prob.objective))
