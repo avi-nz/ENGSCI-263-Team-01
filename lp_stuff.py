@@ -1,7 +1,7 @@
 from feasible_routes import *
 from pulp import *
 import math
-import csv
+import json
 
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
 routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
@@ -75,6 +75,7 @@ for i in range(len(stores_weekday)):
   else:
     exclusion_cost[i] = 800
 
+flat_routes = [item for sublist in routes_weekdays for item in sublist] #flattens to one list, should've done earlier
 
 
 #LP FOR WEEKDAYS
@@ -98,9 +99,22 @@ prob.writeLP("Weekdays_routes.lp")
 prob.solve()
 print("Status: ", LpStatus[prob.status])
 
+chosen_routes = []
+leased_routes = []
 for v in prob.variables():
   if v.varValue != 0:
     print(v.name, "=", v.varValue)
+    if v.name[0:7] == "Route_L":
+      leased_routes.append(flat_routes[int(v.name[12:])])
+      leased_routes[-1].update({"cost" : lease_route_cost[int(v.name[12:])]})
+    elif v.name[0:6] == "Route_":
+      chosen_routes.append(flat_routes[int(v.name[6:])])
+      chosen_routes[-1].update({"cost" : route_cost[int(v.name[6:])]})
+
+with open("stored_routes/chosen_routes_weekdays.txt", "w") as file:
+  json.dump(chosen_routes, file)
+with open("stored_routes/leased_routes_weekdays.txt", "w") as file:
+  json.dump(leased_routes, file)
 
 print("Total Cost = ", value(prob.objective))
 
@@ -157,3 +171,25 @@ for v in prob_fr.variables():
     print(v.name, "=", v.varValue)
 
 print("Total Cost = ", value(prob_fr.objective))
+
+chosen_routes = []
+leased_routes = []
+skipped_stores = []
+for v in prob_fr.variables():
+  if v.varValue != 0:
+    print(v.name, "=", v.varValue)
+    if v.name[0:7] == "Route_L":
+      leased_routes.append(flat_routes[int(v.name[12:])])
+      leased_routes[-1].update({"cost" : lease_route_cost[int(v.name[12:])]})
+    elif v.name[0:6] == "Route_":
+      chosen_routes.append(flat_routes[int(v.name[6:])])
+      chosen_routes[-1].update({"cost" : route_cost[int(v.name[6:])]})
+    elif v.name[0:7] == "Skipped":
+      skipped_stores.append(v.name[14:])
+
+with open("stored_routes/chosen_routes_weekdays_fr.txt", "w") as file:
+  json.dump(chosen_routes, file)
+with open("stored_routes/leased_routes_weekdays_fr.txt", "w") as file:
+  json.dump(leased_routes, file) #should be empty
+with open("stored_routes/skipped_stores_fr.txt", "w") as file:
+  json.dump(skipped_stores, file)
