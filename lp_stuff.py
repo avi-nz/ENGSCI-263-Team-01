@@ -4,7 +4,6 @@ import math
 import json
 
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
-routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
 
 """
 for store in df_week_avg.loc['store']:
