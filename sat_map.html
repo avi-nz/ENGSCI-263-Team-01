@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa796a5fd3c5e6742ac6dd58ad742ff1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa796a5fd3c5e6742ac6dd58ad742ff1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa796a5fd3c5e6742ac6dd58ad742ff1 = L.map(
+                "map_aa796a5fd3c5e6742ac6dd58ad742ff1",
+                {
+                    center: [-36.9079041, 174.7281051],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de6a95d785933b82000957c9c6e12410 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_de6a95d785933b82000957c9c6e12410.addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            var marker_be06a0ef150b98bf0e8eb8d0a855be01 = L.marker(
+                [-36.9079041, 174.7281051],
+                {
+}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            var icon_8ec500e8d1a7eda8045fd47f5397ae26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cadc5f060db27eace2d346e23e839b3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17804f717b29ce365a299098394c71e2 = $(`<div id="html_17804f717b29ce365a299098394c71e2" style="width: 100.0%; height: 100.0%;">Origin Warehouse</div>`)[0];
+                popup_cadc5f060db27eace2d346e23e839b3e.setContent(html_17804f717b29ce365a299098394c71e2);
+            
+        
+
+        marker_be06a0ef150b98bf0e8eb8d0a855be01.bindPopup(popup_cadc5f060db27eace2d346e23e839b3e)
+        ;
+
+        
+    
+    
+                marker_be06a0ef150b98bf0e8eb8d0a855be01.setIcon(icon_8ec500e8d1a7eda8045fd47f5397ae26);
+            
+    
+            var poly_line_c3fa630443ba27c1e1b54ddc5ed9de24 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9108233, 174.6855069], [-36.9308233, 174.6790458], [-36.89331716, 174.7055616], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_c3fa630443ba27c1e1b54ddc5ed9de24.bindTooltip(
+                `<div>
+                     Chosen Route 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3db202e08893db5580434e1ea95fb12 = L.circleMarker(
+                [-36.9108233, 174.6855069],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_4d28483fecc372ad90339c5a3d72eae6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5188153efc5206baf5205fc64e7f71bc = $(`<div id="html_5188153efc5206baf5205fc64e7f71bc" style="width: 100.0%; height: 100.0%;">New World New Lynn</div>`)[0];
+                popup_4d28483fecc372ad90339c5a3d72eae6.setContent(html_5188153efc5206baf5205fc64e7f71bc);
+            
+        
+
+        circle_marker_d3db202e08893db5580434e1ea95fb12.bindPopup(popup_4d28483fecc372ad90339c5a3d72eae6)
+        ;
+
+        
+    
+    
+            var circle_marker_14d203cc62688d0f3102634a806eb418 = L.circleMarker(
+                [-36.9308233, 174.6790458],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_7935e078627ccf467b399c5dcdeb032e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45ae455268f5845cab4065f1297286e4 = $(`<div id="html_45ae455268f5845cab4065f1297286e4" style="width: 100.0%; height: 100.0%;">New World Green Bay</div>`)[0];
+                popup_7935e078627ccf467b399c5dcdeb032e.setContent(html_45ae455268f5845cab4065f1297286e4);
+            
+        
+
+        circle_marker_14d203cc62688d0f3102634a806eb418.bindPopup(popup_7935e078627ccf467b399c5dcdeb032e)
+        ;
+
+        
+    
+    
+            var circle_marker_a4d40210c0d7ff0bed9ade41c2e93d80 = L.circleMarker(
+                [-36.89331716, 174.7055616],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_7c447b467f0d44e2afe57909d2c70fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f615f3d0082ed520371908295c76603 = $(`<div id="html_4f615f3d0082ed520371908295c76603" style="width: 100.0%; height: 100.0%;">Pak 'n Save Mt Albert</div>`)[0];
+                popup_7c447b467f0d44e2afe57909d2c70fbf.setContent(html_4f615f3d0082ed520371908295c76603);
+            
+        
+
+        circle_marker_a4d40210c0d7ff0bed9ade41c2e93d80.bindPopup(popup_7c447b467f0d44e2afe57909d2c70fbf)
+        ;
+
+        
+    
+    
+            var poly_line_89872ee02551ab5990038d0cdcfd0017 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8114278, 174.7114858], [-36.8295102, 174.7961934], [-36.789503, 174.694978], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_89872ee02551ab5990038d0cdcfd0017.bindTooltip(
+                `<div>
+                     Chosen Route 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b41ff18a957dd3b18d719a0b2174a029 = L.circleMarker(
+                [-36.8114278, 174.7114858],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_e771ac2c55db8596eb006a545e9b6146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2b34223056440c930dbcbc388d7f38c = $(`<div id="html_c2b34223056440c930dbcbc388d7f38c" style="width: 100.0%; height: 100.0%;">New World Birkenhead</div>`)[0];
+                popup_e771ac2c55db8596eb006a545e9b6146.setContent(html_c2b34223056440c930dbcbc388d7f38c);
+            
+        
+
+        circle_marker_b41ff18a957dd3b18d719a0b2174a029.bindPopup(popup_e771ac2c55db8596eb006a545e9b6146)
+        ;
+
+        
+    
+    
+            var circle_marker_c8d2270f38fc089a4caad7f16222d03b = L.circleMarker(
+                [-36.8295102, 174.7961934],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_6c1de217283d6b60a572544c0785dfc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f688e1a0933d17d3bbf1e1b780da86e1 = $(`<div id="html_f688e1a0933d17d3bbf1e1b780da86e1" style="width: 100.0%; height: 100.0%;">New World Devonport</div>`)[0];
+                popup_6c1de217283d6b60a572544c0785dfc9.setContent(html_f688e1a0933d17d3bbf1e1b780da86e1);
+            
+        
+
+        circle_marker_c8d2270f38fc089a4caad7f16222d03b.bindPopup(popup_6c1de217283d6b60a572544c0785dfc9)
+        ;
+
+        
+    
+    
+            var circle_marker_b9c0f3b7bc31ad0696a9db5b359b46f1 = L.circleMarker(
+                [-36.789503, 174.694978],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_d9cab2396bdaa133d45d127f1192f690 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b9ea3c6c1a789f24b4089084fb80810 = $(`<div id="html_6b9ea3c6c1a789f24b4089084fb80810" style="width: 100.0%; height: 100.0%;">Four Square Lancaster</div>`)[0];
+                popup_d9cab2396bdaa133d45d127f1192f690.setContent(html_6b9ea3c6c1a789f24b4089084fb80810);
+            
+        
+
+        circle_marker_b9c0f3b7bc31ad0696a9db5b359b46f1.bindPopup(popup_d9cab2396bdaa133d45d127f1192f690)
+        ;
+
+        
+    
+    
+            var poly_line_a7858d6a14c4d36a379222da8683674d = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9802417, 174.8539063], [-36.9878442, 174.880734], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_a7858d6a14c4d36a379222da8683674d.bindTooltip(
+                `<div>
+                     Chosen Route 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93a751c925bd0040618f42d7e6a06bc6 = L.circleMarker(
+                [-36.9802417, 174.8539063],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_4acedc90e32994a847eebe83fd1b4c31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_feeebe6600ed7a780904680ed2845f0d = $(`<div id="html_feeebe6600ed7a780904680ed2845f0d" style="width: 100.0%; height: 100.0%;">New World Papatoetoe</div>`)[0];
+                popup_4acedc90e32994a847eebe83fd1b4c31.setContent(html_feeebe6600ed7a780904680ed2845f0d);
+            
+        
+
+        circle_marker_93a751c925bd0040618f42d7e6a06bc6.bindPopup(popup_4acedc90e32994a847eebe83fd1b4c31)
+        ;
+
+        
+    
+    
+            var circle_marker_ed55140216feefc22f5b558d6890e78a = L.circleMarker(
+                [-36.9878442, 174.880734],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_83b100527d83ed100445a87874ae589b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2307c63962a591474d8dd7a94f8d6a71 = $(`<div id="html_2307c63962a591474d8dd7a94f8d6a71" style="width: 100.0%; height: 100.0%;">Pak 'n Save Manukau</div>`)[0];
+                popup_83b100527d83ed100445a87874ae589b.setContent(html_2307c63962a591474d8dd7a94f8d6a71);
+            
+        
+
+        circle_marker_ed55140216feefc22f5b558d6890e78a.bindPopup(popup_83b100527d83ed100445a87874ae589b)
+        ;
+
+        
+    
+    
+            var poly_line_485846025ee24595f3bf0db691908d26 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.79934866, 174.6449706], [-36.7982349, 174.6492036], [-36.8204832, 174.6085373], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_485846025ee24595f3bf0db691908d26.bindTooltip(
+                `<div>
+                     Chosen Route 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df813cf5cf2658e155255d3ab06272f8 = L.circleMarker(
+                [-36.79934866, 174.6449706],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_8601dacdc7235e5f3c3d19515d63ba02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a89985afc5d88d6357246f49f23783c = $(`<div id="html_6a89985afc5d88d6357246f49f23783c" style="width: 100.0%; height: 100.0%;">New World Hobsonville</div>`)[0];
+                popup_8601dacdc7235e5f3c3d19515d63ba02.setContent(html_6a89985afc5d88d6357246f49f23783c);
+            
+        
+
+        circle_marker_df813cf5cf2658e155255d3ab06272f8.bindPopup(popup_8601dacdc7235e5f3c3d19515d63ba02)
+        ;
+
+        
+    
+    
+            var circle_marker_810feeef03dc05371aaff1f90908b845 = L.circleMarker(
+                [-36.7982349, 174.6492036],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_64bf7a4906b98d1be7142ceba460f3d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dce3f07db927d3cfd378dfb40c01526d = $(`<div id="html_dce3f07db927d3cfd378dfb40c01526d" style="width: 100.0%; height: 100.0%;">Four Square Hobsonville</div>`)[0];
+                popup_64bf7a4906b98d1be7142ceba460f3d5.setContent(html_dce3f07db927d3cfd378dfb40c01526d);
+            
+        
+
+        circle_marker_810feeef03dc05371aaff1f90908b845.bindPopup(popup_64bf7a4906b98d1be7142ceba460f3d5)
+        ;
+
+        
+    
+    
+            var circle_marker_799f65306b4ca5077afca38e8c11f7e1 = L.circleMarker(
+                [-36.8204832, 174.6085373],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_e1e7b185116a8188f53ac6b0513cb8c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f9780f4367a5a07382f6ede75e277d8 = $(`<div id="html_2f9780f4367a5a07382f6ede75e277d8" style="width: 100.0%; height: 100.0%;">Pak 'n Save Westgate</div>`)[0];
+                popup_e1e7b185116a8188f53ac6b0513cb8c9.setContent(html_2f9780f4367a5a07382f6ede75e277d8);
+            
+        
+
+        circle_marker_799f65306b4ca5077afca38e8c11f7e1.bindPopup(popup_e1e7b185116a8188f53ac6b0513cb8c9)
+        ;
+
+        
+    
+    
+            var poly_line_26e6364abdddee60fd5615ccb1c21298 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8819007, 174.7976545], [-36.86099, 174.829238], [-36.8508932, 174.8577912], [-36.87200791, 174.7779037], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_26e6364abdddee60fd5615ccb1c21298.bindTooltip(
+                `<div>
+                     Chosen Route 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_387464200fe72972aa7c702aa5f54001 = L.circleMarker(
+                [-36.8819007, 174.7976545],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_f165f28643c06aecf1a3601dac823508 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e41bece0963e40e8202ae92ac051a6c8 = $(`<div id="html_e41bece0963e40e8202ae92ac051a6c8" style="width: 100.0%; height: 100.0%;">New World Remuera</div>`)[0];
+                popup_f165f28643c06aecf1a3601dac823508.setContent(html_e41bece0963e40e8202ae92ac051a6c8);
+            
+        
+
+        circle_marker_387464200fe72972aa7c702aa5f54001.bindPopup(popup_f165f28643c06aecf1a3601dac823508)
+        ;
+
+        
+    
+    
+            var circle_marker_c05e8ced1134286bb0c8f356eec77d30 = L.circleMarker(
+                [-36.86099, 174.829238],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_74e95065f9f97c05dce9ef5ba7740da3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aefa7ae8e215339b69a99f287e3d8daf = $(`<div id="html_aefa7ae8e215339b69a99f287e3d8daf" style="width: 100.0%; height: 100.0%;">New World Eastridge</div>`)[0];
+                popup_74e95065f9f97c05dce9ef5ba7740da3.setContent(html_aefa7ae8e215339b69a99f287e3d8daf);
+            
+        
+
+        circle_marker_c05e8ced1134286bb0c8f356eec77d30.bindPopup(popup_74e95065f9f97c05dce9ef5ba7740da3)
+        ;
+
+        
+    
+    
+            var circle_marker_7c644f5ae6f7bf4b32e2a7ece7c21073 = L.circleMarker(
+                [-36.8508932, 174.8577912],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_48bf8659bc1e8488e725d7f8638e978a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e03bf72a71a731f49ddc33c3549d22c = $(`<div id="html_6e03bf72a71a731f49ddc33c3549d22c" style="width: 100.0%; height: 100.0%;">Four Square St Heliers</div>`)[0];
+                popup_48bf8659bc1e8488e725d7f8638e978a.setContent(html_6e03bf72a71a731f49ddc33c3549d22c);
+            
+        
+
+        circle_marker_7c644f5ae6f7bf4b32e2a7ece7c21073.bindPopup(popup_48bf8659bc1e8488e725d7f8638e978a)
+        ;
+
+        
+    
+    
+            var circle_marker_1ea10c14bf6959c009a39673da08fc2f = L.circleMarker(
+                [-36.87200791, 174.7779037],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_85918a88081a45b2f727cbb7ceb9ed17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e6933d585716a91eca068ce578aa687 = $(`<div id="html_9e6933d585716a91eca068ce578aa687" style="width: 100.0%; height: 100.0%;">New World Newmarket</div>`)[0];
+                popup_85918a88081a45b2f727cbb7ceb9ed17.setContent(html_9e6933d585716a91eca068ce578aa687);
+            
+        
+
+        circle_marker_1ea10c14bf6959c009a39673da08fc2f.bindPopup(popup_85918a88081a45b2f727cbb7ceb9ed17)
+        ;
+
+        
+    
+    
+            var poly_line_5f12787391b959ddece510377bf7f708 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8486497, 174.7512927], [-36.730108, 174.7071498], [-36.8464718, 174.7657806], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_5f12787391b959ddece510377bf7f708.bindTooltip(
+                `<div>
+                     Chosen Route 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f04653531c9be975a438edccad1fe380 = L.circleMarker(
+                [-36.8486497, 174.7512927],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_cf65f3a33bd85b8fea3306f581bfd1b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49f6e29bc71e0dcebd2bac00e4aa81f0 = $(`<div id="html_49f6e29bc71e0dcebd2bac00e4aa81f0" style="width: 100.0%; height: 100.0%;">New World Victoria Park</div>`)[0];
+                popup_cf65f3a33bd85b8fea3306f581bfd1b4.setContent(html_49f6e29bc71e0dcebd2bac00e4aa81f0);
+            
+        
+
+        circle_marker_f04653531c9be975a438edccad1fe380.bindPopup(popup_cf65f3a33bd85b8fea3306f581bfd1b4)
+        ;
+
+        
+    
+    
+            var circle_marker_bcb162926b255ae530afb24fa8e24f73 = L.circleMarker(
+                [-36.730108, 174.7071498],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_34c9d06559072ce095136e7c5273c5ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed36546b0cc400540def59d24bc4ea9e = $(`<div id="html_ed36546b0cc400540def59d24bc4ea9e" style="width: 100.0%; height: 100.0%;">Pak 'n Save Albany</div>`)[0];
+                popup_34c9d06559072ce095136e7c5273c5ae.setContent(html_ed36546b0cc400540def59d24bc4ea9e);
+            
+        
+
+        circle_marker_bcb162926b255ae530afb24fa8e24f73.bindPopup(popup_34c9d06559072ce095136e7c5273c5ae)
+        ;
+
+        
+    
+    
+            var circle_marker_5876d0990188c73dc7747f3421fa8823 = L.circleMarker(
+                [-36.8464718, 174.7657806],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_519e18b3acb3ee6518676297aa32c16c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20bdc0e75f206a3967816f4b506f8d8d = $(`<div id="html_20bdc0e75f206a3967816f4b506f8d8d" style="width: 100.0%; height: 100.0%;">New World Metro Queen St</div>`)[0];
+                popup_519e18b3acb3ee6518676297aa32c16c.setContent(html_20bdc0e75f206a3967816f4b506f8d8d);
+            
+        
+
+        circle_marker_5876d0990188c73dc7747f3421fa8823.bindPopup(popup_519e18b3acb3ee6518676297aa32c16c)
+        ;
+
+        
+    
+    
+            var poly_line_eab6eedcc9660e3965fb9b3837cfd243 = L.polyline(
+                [[-36.9079041, 174.7281051], [-37.0328005, 174.867622], [-37.0225053, 174.8967004], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_eab6eedcc9660e3965fb9b3837cfd243.bindTooltip(
+                `<div>
+                     Chosen Route 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_237c2b8e895f4f06b8e9591af1fe8706 = L.circleMarker(
+                [-37.0328005, 174.867622],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_773c6e1db0de8ed9de29232517624a08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cec98588ffd0e7399c974a1d1d73b89 = $(`<div id="html_2cec98588ffd0e7399c974a1d1d73b89" style="width: 100.0%; height: 100.0%;">Pak 'n Save Clendon</div>`)[0];
+                popup_773c6e1db0de8ed9de29232517624a08.setContent(html_2cec98588ffd0e7399c974a1d1d73b89);
+            
+        
+
+        circle_marker_237c2b8e895f4f06b8e9591af1fe8706.bindPopup(popup_773c6e1db0de8ed9de29232517624a08)
+        ;
+
+        
+    
+    
+            var circle_marker_bf3e0244a6fab0c5ad904136f6cad537 = L.circleMarker(
+                [-37.0225053, 174.8967004],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_09b2f614643ef1d7a0679dcdd231d97e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cf881009a5f375220fff7d9dfd9e441 = $(`<div id="html_1cf881009a5f375220fff7d9dfd9e441" style="width: 100.0%; height: 100.0%;">New World Southmall</div>`)[0];
+                popup_09b2f614643ef1d7a0679dcdd231d97e.setContent(html_1cf881009a5f375220fff7d9dfd9e441);
+            
+        
+
+        circle_marker_bf3e0244a6fab0c5ad904136f6cad537.bindPopup(popup_09b2f614643ef1d7a0679dcdd231d97e)
+        ;
+
+        
+    
+    
+            var poly_line_96b44d11d4a181478630487cc6a27a14 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8990418, 174.9068675], [-36.904065, 174.9248668], [-36.9151401, 174.8895497], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_96b44d11d4a181478630487cc6a27a14.bindTooltip(
+                `<div>
+                     Chosen Route 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44faffb78dadfc820d4dfc7236917ecd = L.circleMarker(
+                [-36.8990418, 174.9068675],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_ce4f71b941d0574036028cf2f95a6c7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d25f25b35e798b5bd7c4dd8815869e20 = $(`<div id="html_d25f25b35e798b5bd7c4dd8815869e20" style="width: 100.0%; height: 100.0%;">Pak 'n Save Highland Park</div>`)[0];
+                popup_ce4f71b941d0574036028cf2f95a6c7e.setContent(html_d25f25b35e798b5bd7c4dd8815869e20);
+            
+        
+
+        circle_marker_44faffb78dadfc820d4dfc7236917ecd.bindPopup(popup_ce4f71b941d0574036028cf2f95a6c7e)
+        ;
+
+        
+    
+    
+            var circle_marker_d22ca5634de7d9a4bda009ece173f44e = L.circleMarker(
+                [-36.904065, 174.9248668],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_749518a6ff903daa3ebe6d4b9cb8436f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8764579421abca84d069f0d3e1f0ea4b = $(`<div id="html_8764579421abca84d069f0d3e1f0ea4b" style="width: 100.0%; height: 100.0%;">New World Howick</div>`)[0];
+                popup_749518a6ff903daa3ebe6d4b9cb8436f.setContent(html_8764579421abca84d069f0d3e1f0ea4b);
+            
+        
+
+        circle_marker_d22ca5634de7d9a4bda009ece173f44e.bindPopup(popup_749518a6ff903daa3ebe6d4b9cb8436f)
+        ;
+
+        
+    
+    
+            var circle_marker_8c0941f32e57865b4fea78679a1fa416 = L.circleMarker(
+                [-36.9151401, 174.8895497],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_e888bc3e40a59be6c74d35f9869faf2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_578092ed68be8794a80fa5bbafeb7bac = $(`<div id="html_578092ed68be8794a80fa5bbafeb7bac" style="width: 100.0%; height: 100.0%;">Four Square Pakuranga Heights</div>`)[0];
+                popup_e888bc3e40a59be6c74d35f9869faf2e.setContent(html_578092ed68be8794a80fa5bbafeb7bac);
+            
+        
+
+        circle_marker_8c0941f32e57865b4fea78679a1fa416.bindPopup(popup_e888bc3e40a59be6c74d35f9869faf2e)
+        ;
+
+        
+    
+    
+            var poly_line_abd23cfd53c8f1f8391aa558fb88d62b = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8772956, 174.6325345], [-36.910914, 174.651446], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_abd23cfd53c8f1f8391aa558fb88d62b.bindTooltip(
+                `<div>
+                     Chosen Route 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce9f98100eef8d7c2497cd98baf63056 = L.circleMarker(
+                [-36.8772956, 174.6325345],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_0ca96898d92a1b1e6246714690c6a767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ff1be02fe1ef330918f430f2e24200d = $(`<div id="html_2ff1be02fe1ef330918f430f2e24200d" style="width: 100.0%; height: 100.0%;">Pak 'n Save Henderson</div>`)[0];
+                popup_0ca96898d92a1b1e6246714690c6a767.setContent(html_2ff1be02fe1ef330918f430f2e24200d);
+            
+        
+
+        circle_marker_ce9f98100eef8d7c2497cd98baf63056.bindPopup(popup_0ca96898d92a1b1e6246714690c6a767)
+        ;
+
+        
+    
+    
+            var circle_marker_7dfafd2020a19af30d99d15ff55a7014 = L.circleMarker(
+                [-36.910914, 174.651446],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_850e33bffb431406b95dff860228616a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53fc412bb331fd83ad8bd2a92024a2dd = $(`<div id="html_53fc412bb331fd83ad8bd2a92024a2dd" style="width: 100.0%; height: 100.0%;">Four Square Glen Eden</div>`)[0];
+                popup_850e33bffb431406b95dff860228616a.setContent(html_53fc412bb331fd83ad8bd2a92024a2dd);
+            
+        
+
+        circle_marker_7dfafd2020a19af30d99d15ff55a7014.bindPopup(popup_850e33bffb431406b95dff860228616a)
+        ;
+
+        
+    
+    
+            var poly_line_55424fca57375629f91ed997a83aed10 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8574574, 174.6281678], [-36.86976449, 174.7127114], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_55424fca57375629f91ed997a83aed10.bindTooltip(
+                `<div>
+                     Chosen Route 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa0f227b60cb5cde98466f08585f668e = L.circleMarker(
+                [-36.8574574, 174.6281678],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_35bae6d849e74d56a940169c85421eda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab1c17802a7f9c7589606fb5f4481cb7 = $(`<div id="html_ab1c17802a7f9c7589606fb5f4481cb7" style="width: 100.0%; height: 100.0%;">Pak 'n Save Lincoln Road</div>`)[0];
+                popup_35bae6d849e74d56a940169c85421eda.setContent(html_ab1c17802a7f9c7589606fb5f4481cb7);
+            
+        
+
+        circle_marker_fa0f227b60cb5cde98466f08585f668e.bindPopup(popup_35bae6d849e74d56a940169c85421eda)
+        ;
+
+        
+    
+    
+            var circle_marker_27b2a16f262db7d798f4d5f1a45b41b3 = L.circleMarker(
+                [-36.86976449, 174.7127114],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_509c1030b2f8e4445a0929d31069850a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fad69311a38ffa8b1cf86761cf8ca0df = $(`<div id="html_fad69311a38ffa8b1cf86761cf8ca0df" style="width: 100.0%; height: 100.0%;">New World Point Chevalier</div>`)[0];
+                popup_509c1030b2f8e4445a0929d31069850a.setContent(html_fad69311a38ffa8b1cf86761cf8ca0df);
+            
+        
+
+        circle_marker_27b2a16f262db7d798f4d5f1a45b41b3.bindPopup(popup_509c1030b2f8e4445a0929d31069850a)
+        ;
+
+        
+    
+    
+            var poly_line_b3281e3c3b73cad23c52cfcacfc6ab6f = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9684476, 174.7970282], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_b3281e3c3b73cad23c52cfcacfc6ab6f.bindTooltip(
+                `<div>
+                     Chosen Route 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf2528950186bf37a09e91f5c5cb5843 = L.circleMarker(
+                [-36.9684476, 174.7970282],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_1b48ed59de74a9a5e6f6af53a3e84ae2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11ed9815aa6387b47c1caa136fed57de = $(`<div id="html_11ed9815aa6387b47c1caa136fed57de" style="width: 100.0%; height: 100.0%;">Pak 'n Save Mangere</div>`)[0];
+                popup_1b48ed59de74a9a5e6f6af53a3e84ae2.setContent(html_11ed9815aa6387b47c1caa136fed57de);
+            
+        
+
+        circle_marker_cf2528950186bf37a09e91f5c5cb5843.bindPopup(popup_1b48ed59de74a9a5e6f6af53a3e84ae2)
+        ;
+
+        
+    
+    
+            var poly_line_11807ddb62447b36cad2498b1ddfa4a1 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9650866, 174.9148097], [-36.9645274, 174.911826], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_11807ddb62447b36cad2498b1ddfa4a1.bindTooltip(
+                `<div>
+                     Chosen Route 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83137db574f3417d667c8a23f9de23a5 = L.circleMarker(
+                [-36.9650866, 174.9148097],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_dae49cf802212807727f5cbc9475e43d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c11db59139244bfa2791c2b1be9d26c = $(`<div id="html_7c11db59139244bfa2791c2b1be9d26c" style="width: 100.0%; height: 100.0%;">Pak 'n Save Ormiston</div>`)[0];
+                popup_dae49cf802212807727f5cbc9475e43d.setContent(html_7c11db59139244bfa2791c2b1be9d26c);
+            
+        
+
+        circle_marker_83137db574f3417d667c8a23f9de23a5.bindPopup(popup_dae49cf802212807727f5cbc9475e43d)
+        ;
+
+        
+    
+    
+            var circle_marker_1f1dc0d826b91a788e533cfde7288d86 = L.circleMarker(
+                [-36.9645274, 174.911826],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_6cbe44a2b85933f053618fcd801253c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f40d461c78118894f6c5e5017558c7a = $(`<div id="html_4f40d461c78118894f6c5e5017558c7a" style="width: 100.0%; height: 100.0%;">New World Ormiston</div>`)[0];
+                popup_6cbe44a2b85933f053618fcd801253c7.setContent(html_4f40d461c78118894f6c5e5017558c7a);
+            
+        
+
+        circle_marker_1f1dc0d826b91a788e533cfde7288d86.bindPopup(popup_6cbe44a2b85933f053618fcd801253c7)
+        ;
+
+        
+    
+    
+            var poly_line_e1ee8069ce87ea5eb80a496995a7d206 = L.polyline(
+                [[-36.9079041, 174.7281051], [-37.0535182, 174.9311235], [-37.064268, 174.9411007], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_e1ee8069ce87ea5eb80a496995a7d206.bindTooltip(
+                `<div>
+                     Chosen Route 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bd97a68a2f042dadb2f88ed615dc1d5 = L.circleMarker(
+                [-37.0535182, 174.9311235],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_83c4aa3e530160604f9f49ddaa06f06d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b91404d5d08cc1a75a53bfa4df1a7c0a = $(`<div id="html_b91404d5d08cc1a75a53bfa4df1a7c0a" style="width: 100.0%; height: 100.0%;">Pak 'n Save Papakura</div>`)[0];
+                popup_83c4aa3e530160604f9f49ddaa06f06d.setContent(html_b91404d5d08cc1a75a53bfa4df1a7c0a);
+            
+        
+
+        circle_marker_9bd97a68a2f042dadb2f88ed615dc1d5.bindPopup(popup_83c4aa3e530160604f9f49ddaa06f06d)
+        ;
+
+        
+    
+    
+            var circle_marker_ead1f92659ec299190c0316d5ceb20b0 = L.circleMarker(
+                [-37.064268, 174.9411007],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_292c11e980b612fce7487ad2ffa51822 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cfa55bf9df6d4b087f26cfd5905dc1f = $(`<div id="html_9cfa55bf9df6d4b087f26cfd5905dc1f" style="width: 100.0%; height: 100.0%;">New World Papakura</div>`)[0];
+                popup_292c11e980b612fce7487ad2ffa51822.setContent(html_9cfa55bf9df6d4b087f26cfd5905dc1f);
+            
+        
+
+        circle_marker_ead1f92659ec299190c0316d5ceb20b0.bindPopup(popup_292c11e980b612fce7487ad2ffa51822)
+        ;
+
+        
+    
+    
+            var poly_line_29573361b55d254c6a5c0c465fc15b81 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9100403, 174.7746132], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_29573361b55d254c6a5c0c465fc15b81.bindTooltip(
+                `<div>
+                     Chosen Route 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a874ab20600ab803deb8dd848b94aa70 = L.circleMarker(
+                [-36.9100403, 174.7746132],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_7611338fb3ce4d67cab0eb744433fd22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65860d125ec9d91beb5efede5f8802a3 = $(`<div id="html_65860d125ec9d91beb5efede5f8802a3" style="width: 100.0%; height: 100.0%;">Pak 'n Save Royal Oak</div>`)[0];
+                popup_7611338fb3ce4d67cab0eb744433fd22.setContent(html_65860d125ec9d91beb5efede5f8802a3);
+            
+        
+
+        circle_marker_a874ab20600ab803deb8dd848b94aa70.bindPopup(popup_7611338fb3ce4d67cab0eb744433fd22)
+        ;
+
+        
+    
+    
+            var poly_line_85cf16355fdf9b5907836737e5c458be = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9133467, 174.8400897], [-36.8902739, 174.831971], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_85cf16355fdf9b5907836737e5c458be.bindTooltip(
+                `<div>
+                     Chosen Route 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32fca834f0fb29872608b5c840945470 = L.circleMarker(
+                [-36.9133467, 174.8400897],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_b39039facb80e3fc818bb184fbca45de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82fcadf4447a5efb30b3e3c677e298cc = $(`<div id="html_82fcadf4447a5efb30b3e3c677e298cc" style="width: 100.0%; height: 100.0%;">Pak 'n Save Sylvia Park</div>`)[0];
+                popup_b39039facb80e3fc818bb184fbca45de.setContent(html_82fcadf4447a5efb30b3e3c677e298cc);
+            
+        
+
+        circle_marker_32fca834f0fb29872608b5c840945470.bindPopup(popup_b39039facb80e3fc818bb184fbca45de)
+        ;
+
+        
+    
+    
+            var circle_marker_45db6a7cc17df8e50b7f273d1977bd12 = L.circleMarker(
+                [-36.8902739, 174.831971],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_daf006c86641f19ce0e7600c54c8d70e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_362c95dcc898294476d4513e624a2322 = $(`<div id="html_362c95dcc898294476d4513e624a2322" style="width: 100.0%; height: 100.0%;">New World Stonefields</div>`)[0];
+                popup_daf006c86641f19ce0e7600c54c8d70e.setContent(html_362c95dcc898294476d4513e624a2322);
+            
+        
+
+        circle_marker_45db6a7cc17df8e50b7f273d1977bd12.bindPopup(popup_daf006c86641f19ce0e7600c54c8d70e)
+        ;
+
+        
+    
+    
+            var poly_line_90a5a87e425856c14f5fa66fb99a6be1 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.778998, 174.744093], [-36.7722983, 174.7648051], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_90a5a87e425856c14f5fa66fb99a6be1.bindTooltip(
+                `<div>
+                     Chosen Route 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b475c260b4df7ccf842b4b65ecdce5f4 = L.circleMarker(
+                [-36.778998, 174.744093],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_523abb95cfc5ea85dad42826f9c5e7e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18d8127d1a7a9f78418fe2a619a1679f = $(`<div id="html_18d8127d1a7a9f78418fe2a619a1679f" style="width: 100.0%; height: 100.0%;">Pak 'n Save Wairau Road</div>`)[0];
+                popup_523abb95cfc5ea85dad42826f9c5e7e2.setContent(html_18d8127d1a7a9f78418fe2a619a1679f);
+            
+        
+
+        circle_marker_b475c260b4df7ccf842b4b65ecdce5f4.bindPopup(popup_523abb95cfc5ea85dad42826f9c5e7e2)
+        ;
+
+        
+    
+    
+            var circle_marker_61bccc32e380f11fa37f5f8cc87060bb = L.circleMarker(
+                [-36.7722983, 174.7648051],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_4734d7d990322e4854ef7ae30cc2e2bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9fc147ad87279042ac2fd4a223646d2 = $(`<div id="html_f9fc147ad87279042ac2fd4a223646d2" style="width: 100.0%; height: 100.0%;">New World Milford</div>`)[0];
+                popup_4734d7d990322e4854ef7ae30cc2e2bc.setContent(html_f9fc147ad87279042ac2fd4a223646d2);
+            
+        
+
+        circle_marker_61bccc32e380f11fa37f5f8cc87060bb.bindPopup(popup_4734d7d990322e4854ef7ae30cc2e2bc)
+        ;
+
+        
+    
+    
+            var poly_line_3787781a675b0e19dd23ff9d900f71e4 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.9338828, 174.9114914], [-36.9305535, 174.9128891], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_3787781a675b0e19dd23ff9d900f71e4.bindTooltip(
+                `<div>
+                     Chosen Route 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1717c9342ff827c0ddfafe6c6d805c6b = L.circleMarker(
+                [-36.9338828, 174.9114914],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_99ef96234f75913f2bb8ac7a5982742c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29a299453be3c5fb94fafdd54db4c399 = $(`<div id="html_29a299453be3c5fb94fafdd54db4c399" style="width: 100.0%; height: 100.0%;">New World Botany</div>`)[0];
+                popup_99ef96234f75913f2bb8ac7a5982742c.setContent(html_29a299453be3c5fb94fafdd54db4c399);
+            
+        
+
+        circle_marker_1717c9342ff827c0ddfafe6c6d805c6b.bindPopup(popup_99ef96234f75913f2bb8ac7a5982742c)
+        ;
+
+        
+    
+    
+            var circle_marker_afb5c7180884d51bda937c7c3769ff25 = L.circleMarker(
+                [-36.9305535, 174.9128891],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_a79e15d2b78ef5a3c0a03167a9f60006 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4414c320b3ef97678ca8740e09484e8d = $(`<div id="html_4414c320b3ef97678ca8740e09484e8d" style="width: 100.0%; height: 100.0%;">Pak 'n Save Botany</div>`)[0];
+                popup_a79e15d2b78ef5a3c0a03167a9f60006.setContent(html_4414c320b3ef97678ca8740e09484e8d);
+            
+        
+
+        circle_marker_afb5c7180884d51bda937c7c3769ff25.bindPopup(popup_a79e15d2b78ef5a3c0a03167a9f60006)
+        ;
+
+        
+    
+    
+            var poly_line_b0d62c3e27f0bee6b5a8462b090e08b8 = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.7159615, 174.7472869], [-36.6852502, 174.7396625], [-36.7281436, 174.710513], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_b0d62c3e27f0bee6b5a8462b090e08b8.bindTooltip(
+                `<div>
+                     Chosen Route 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34f71d46378a57382f69cd17a0ae46de = L.circleMarker(
+                [-36.7159615, 174.7472869],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_14b50d7dd3b4a56fea79cf2e25070736 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_163925c32582bedd6eaee4cd718b51ab = $(`<div id="html_163925c32582bedd6eaee4cd718b51ab" style="width: 100.0%; height: 100.0%;">New World Browns Bay</div>`)[0];
+                popup_14b50d7dd3b4a56fea79cf2e25070736.setContent(html_163925c32582bedd6eaee4cd718b51ab);
+            
+        
+
+        circle_marker_34f71d46378a57382f69cd17a0ae46de.bindPopup(popup_14b50d7dd3b4a56fea79cf2e25070736)
+        ;
+
+        
+    
+    
+            var circle_marker_909fc9829816ac0d6a13cc6233648bfa = L.circleMarker(
+                [-36.6852502, 174.7396625],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_0fa27e89d325c1b7c38ffc604a5b6271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd82519618acbd7f817af22f02215235 = $(`<div id="html_cd82519618acbd7f817af22f02215235" style="width: 100.0%; height: 100.0%;">New World Long Bay</div>`)[0];
+                popup_0fa27e89d325c1b7c38ffc604a5b6271.setContent(html_cd82519618acbd7f817af22f02215235);
+            
+        
+
+        circle_marker_909fc9829816ac0d6a13cc6233648bfa.bindPopup(popup_0fa27e89d325c1b7c38ffc604a5b6271)
+        ;
+
+        
+    
+    
+            var circle_marker_b0e83e401a904a48f8adb0cd76f0e7e0 = L.circleMarker(
+                [-36.7281436, 174.710513],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_be2ba62b22a342bc36246e114451e586 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df8d92eccd5b1c7ab66c54fd4117238f = $(`<div id="html_df8d92eccd5b1c7ab66c54fd4117238f" style="width: 100.0%; height: 100.0%;">New World Albany</div>`)[0];
+                popup_be2ba62b22a342bc36246e114451e586.setContent(html_df8d92eccd5b1c7ab66c54fd4117238f);
+            
+        
+
+        circle_marker_b0e83e401a904a48f8adb0cd76f0e7e0.bindPopup(popup_be2ba62b22a342bc36246e114451e586)
+        ;
+
+        
+    
+    
+            var poly_line_2e02ac26c43f67824761340982291b4a = L.polyline(
+                [[-36.9079041, 174.7281051], [-36.8803127, 174.726019], [-36.875811, 174.855104], [-36.9086111, 174.7344444], [-36.9079041, 174.7281051]],
+                {"bubblingMouseEvents": true, "color": "#1D70B8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1D70B8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+            poly_line_2e02ac26c43f67824761340982291b4a.bindTooltip(
+                `<div>
+                     Chosen Route 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4807dca4d3600b77760f75cae1cf498e = L.circleMarker(
+                [-36.8803127, 174.726019],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_e4af0124845e56af35f19b5371e5b31d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b6d96c74f4ba0a02732366fa030ac2f = $(`<div id="html_6b6d96c74f4ba0a02732366fa030ac2f" style="width: 100.0%; height: 100.0%;">New World Mt Albert</div>`)[0];
+                popup_e4af0124845e56af35f19b5371e5b31d.setContent(html_6b6d96c74f4ba0a02732366fa030ac2f);
+            
+        
+
+        circle_marker_4807dca4d3600b77760f75cae1cf498e.bindPopup(popup_e4af0124845e56af35f19b5371e5b31d)
+        ;
+
+        
+    
+    
+            var circle_marker_6749c0b3cbb35342b33d5832818b2a1b = L.circleMarker(
+                [-36.875811, 174.855104],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_c48af9f02f6c26b78cb635a6d80aada3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4210eeed69e36ca42b09767d51ad93a0 = $(`<div id="html_4210eeed69e36ca42b09767d51ad93a0" style="width: 100.0%; height: 100.0%;">Pak 'n Save Glen Innes</div>`)[0];
+                popup_c48af9f02f6c26b78cb635a6d80aada3.setContent(html_4210eeed69e36ca42b09767d51ad93a0);
+            
+        
+
+        circle_marker_6749c0b3cbb35342b33d5832818b2a1b.bindPopup(popup_c48af9f02f6c26b78cb635a6d80aada3)
+        ;
+
+        
+    
+    
+            var circle_marker_46b8df34b217783d4e60463529f83002 = L.circleMarker(
+                [-36.9086111, 174.7344444],
+                {"bubblingMouseEvents": true, "color": "#003078", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003078", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_aa796a5fd3c5e6742ac6dd58ad742ff1);
+        
+    
+        var popup_d903c2352fc010dad83ff61d779e17a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e6b135692c4c9d006ba7c1ed2946658 = $(`<div id="html_9e6b135692c4c9d006ba7c1ed2946658" style="width: 100.0%; height: 100.0%;">New World Mt Roskill</div>`)[0];
+                popup_d903c2352fc010dad83ff61d779e17a4.setContent(html_9e6b135692c4c9d006ba7c1ed2946658);
+            
+        
+
+        circle_marker_46b8df34b217783d4e60463529f83002.bindPopup(popup_d903c2352fc010dad83ff61d779e17a4)
+        ;
+
+        
+    
+</script>
+</html>
