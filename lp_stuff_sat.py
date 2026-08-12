@@ -58,7 +58,7 @@ for i in range(len(routes_sat)):
   for j in range(len(routes_sat[i])):
     route_cost[k] += routes_sat[i][j]["total_time_sec"]*220/3600
     if route_cost[k] > 4*220:
-      route_cost[k] = 10**10 #sets the price VERY HIGH if the duration is over 4 hours
+      route_cost[k] = 4*220 + (route_cost[k]-4*220)*310/220 #accounts for overtime if the route is >4 hours
     k+=1
 
 lease_route_cost = [0 for i in range(num_routes)]
@@ -117,6 +117,8 @@ with open("stored_routes/leased_routes_sat.", "w") as file:
   json.dump(leased_routes, file)
 
 print("Total Cost = ", value(prob.objective))
+Total_Cost = value(prob.objective)
+
 
 flat_routes = [item for sublist in routes_sat for item in sublist]
 
@@ -171,6 +173,8 @@ for v in prob_fr.variables():
     print(v.name, "=", v.varValue)
 
 print("Total Cost = ", value(prob_fr.objective))
+Total_Cost_fr = value(prob_fr.objective)
+
 
 chosen_routes = []
 leased_routes = []
@@ -195,3 +199,5 @@ with open("stored_routes/skipped_stores_sat_fr.txt", "w") as file:
   json.dump(skipped_stores, file)
 
 #note that all files are actually empty except for the chosen_routes ones
+print(f"Cost without Fuel Reduction: {Total_Cost}\n"
+      f"Cost with Fuel Reduction: {Total_Cost_fr}")
