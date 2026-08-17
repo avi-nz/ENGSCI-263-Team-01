@@ -1,5 +1,7 @@
 import json
 
+#only shows from the latest routes generation strategy
+
 print("For Weekdays:")
 with open("stored_routes/chosen_routes_weekdays.txt") as fp:
     trucks = len(json.load(fp))

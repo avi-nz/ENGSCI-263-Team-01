@@ -5,6 +5,8 @@ import json
 
 routes_sat = all_feasible_routes(df_sat_avg, durations_df_sat, warehouse_df_sat.squeeze())
 
+print("all routes found")
+
 """
 for store in df_week_avg.loc['store']:
     print(store)
@@ -77,6 +79,7 @@ for i in range(len(stores_sat)):
 
 flat_routes = [item for sublist in routes_sat for item in sublist] #flattens to one list, should've done earlier
 
+print("constants set up")
 
 #LP FOR SATURDAY
 A_sat = makeDict([stores_sat, routes_index], A_sat, 0)

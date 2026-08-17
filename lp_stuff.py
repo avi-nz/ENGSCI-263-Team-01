@@ -5,6 +5,8 @@ import json
 
 routes_weekdays = all_feasible_routes(df_week_avg, durations_df, warehouse_df)
 
+print("all routes found")
+
 """
 for store in df_week_avg.loc['store']:
     print(store)
@@ -76,6 +78,7 @@ for i in range(len(stores_weekday)):
 
 flat_routes = [item for sublist in routes_weekdays for item in sublist] #flattens to one list, should've done earlier
 
+print("constants set up")
 
 #LP FOR WEEKDAYS
 A_weekdays = makeDict([stores_weekday, routes_index], A_weekdays, 0)
