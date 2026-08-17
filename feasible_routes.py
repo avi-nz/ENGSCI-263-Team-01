@@ -42,7 +42,7 @@ def generate_feasible_routes(
         df_start : pd.DataFrame,
         df_demand : pd.DataFrame,
         max_capacity: float = 14.0,
-        max_time: float = 12600.0,
+        max_time: float = 14400.0,
         time_per_pallet: float = 1080.0
 ) -> List[Dict[str, Any]]:
     """"""
