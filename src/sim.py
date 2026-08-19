@@ -408,7 +408,7 @@ if __name__ == "__main__":
     leased_sat = load_chosen_routes("../stored_routes/leased_routes_sat.txt")
     results_sat_baseline = run_simulation(
         chosen_sat, leased_sat, skipped_stores=[],
-        demand_df=demand_df, multiples_path="../weekday_route_multiples.csv",
+        demand_df=demand_df, multiples_path="../saturday_route_multiples.csv",
         day_type="saturday", exclusion_cost_lookup=exclusion_cost_lookup,
         n_reps=1000,
     )
@@ -422,7 +422,7 @@ if __name__ == "__main__":
     skipped_sat_fr = load_skipped_stores("../stored_routes/skipped_stores_sat_fr.txt")
     results_sat_fr = run_simulation(
         chosen_sat_fr, leased_sat_fr, skipped_stores=skipped_sat_fr,
-        demand_df=demand_df, multiples_path="../weekday_fr_route_multiples.csv",
+        demand_df=demand_df, multiples_path="../saturday_route_multiples.csv",
         day_type="saturday", exclusion_cost_lookup=exclusion_cost_lookup,
         n_reps=1000,
     )
