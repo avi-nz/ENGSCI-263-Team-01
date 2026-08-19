@@ -1,0 +1,441 @@
+Destination,Time,ToStore_mins,FromStore_mins
+New World Albany,08:00,37,50
+New World Albany,09:00,34,39
+New World Albany,10:00,32,35
+New World Albany,11:00,32,34
+New World Albany,14:00,33,34
+New World Albany,15:00,36,36
+New World Albany,16:00,43,38
+New World Albany,17:00,45,42
+New World Birkenhead,08:00,38,37
+New World Birkenhead,09:00,33,32
+New World Birkenhead,10:00,30,29
+New World Birkenhead,11:00,29,28
+New World Birkenhead,14:00,30,28
+New World Birkenhead,15:00,32,30
+New World Birkenhead,16:00,38,33
+New World Birkenhead,17:00,42,37
+New World Botany,08:00,39,43
+New World Botany,09:00,36,37
+New World Botany,10:00,35,33
+New World Botany,11:00,34,33
+New World Botany,14:00,36,35
+New World Botany,15:00,39,42
+New World Botany,16:00,44,50
+New World Botany,17:00,46,51
+New World Browns Bay,08:00,43,53
+New World Browns Bay,09:00,40,42
+New World Browns Bay,10:00,38,38
+New World Browns Bay,11:00,37,36
+New World Browns Bay,14:00,39,37
+New World Browns Bay,15:00,42,38
+New World Browns Bay,16:00,47,40
+New World Browns Bay,17:00,50,43
+New World Devonport,08:00,46,42
+New World Devonport,09:00,40,38
+New World Devonport,10:00,36,35
+New World Devonport,11:00,36,35
+New World Devonport,14:00,37,37
+New World Devonport,15:00,41,40
+New World Devonport,16:00,48,46
+New World Devonport,17:00,51,49
+New World Eastridge,08:00,37,34
+New World Eastridge,09:00,33,30
+New World Eastridge,10:00,30,28
+New World Eastridge,11:00,30,28
+New World Eastridge,14:00,30,29
+New World Eastridge,15:00,31,31
+New World Eastridge,16:00,33,36
+New World Eastridge,17:00,35,38
+New World Green Bay,08:00,13,18
+New World Green Bay,09:00,13,15
+New World Green Bay,10:00,13,13
+New World Green Bay,11:00,13,13
+New World Green Bay,14:00,13,13
+New World Green Bay,15:00,14,13
+New World Green Bay,16:00,16,14
+New World Green Bay,17:00,17,14
+New World Hobsonville,08:00,24,39
+New World Hobsonville,09:00,23,29
+New World Hobsonville,10:00,23,25
+New World Hobsonville,11:00,23,25
+New World Hobsonville,14:00,23,25
+New World Hobsonville,15:00,26,25
+New World Hobsonville,16:00,32,26
+New World Hobsonville,17:00,35,26
+New World Howick,08:00,42,46
+New World Howick,09:00,38,39
+New World Howick,10:00,35,36
+New World Howick,11:00,35,36
+New World Howick,14:00,37,38
+New World Howick,15:00,40,42
+New World Howick,16:00,45,47
+New World Howick,17:00,49,47
+New World Long Bay,08:00,43,56
+New World Long Bay,09:00,40,44
+New World Long Bay,10:00,38,40
+New World Long Bay,11:00,38,38
+New World Long Bay,14:00,39,39
+New World Long Bay,15:00,43,40
+New World Long Bay,16:00,50,42
+New World Long Bay,17:00,52,45
+New World Metro Shore City,08:00,36,33
+New World Metro Shore City,09:00,31,29
+New World Metro Shore City,10:00,28,27
+New World Metro Shore City,11:00,28,27
+New World Metro Shore City,14:00,28,28
+New World Metro Shore City,15:00,31,30
+New World Metro Shore City,16:00,37,33
+New World Metro Shore City,17:00,40,37
+New World Metro Queen St,08:00,31,23
+New World Metro Queen St,09:00,27,22
+New World Metro Queen St,10:00,24,22
+New World Metro Queen St,11:00,23,22
+New World Metro Queen St,14:00,23,23
+New World Metro Queen St,15:00,23,24
+New World Metro Queen St,16:00,24,27
+New World Metro Queen St,17:00,26,32
+New World Milford,08:00,39,37
+New World Milford,09:00,35,33
+New World Milford,10:00,31,29
+New World Milford,11:00,31,29
+New World Milford,14:00,32,29
+New World Milford,15:00,35,32
+New World Milford,16:00,41,36
+New World Milford,17:00,44,40
+New World Mt Albert,08:00,14,14
+New World Mt Albert,09:00,13,14
+New World Mt Albert,10:00,12,13
+New World Mt Albert,11:00,12,13
+New World Mt Albert,14:00,13,13
+New World Mt Albert,15:00,13,14
+New World Mt Albert,16:00,14,14
+New World Mt Albert,17:00,14,15
+New World Mt Roskill,08:00,4,7
+New World Mt Roskill,09:00,4,6
+New World Mt Roskill,10:00,4,6
+New World Mt Roskill,11:00,4,6
+New World Mt Roskill,14:00,4,6
+New World Mt Roskill,15:00,4,7
+New World Mt Roskill,16:00,4,7
+New World Mt Roskill,17:00,4,7
+New World New Lynn,08:00,15,19
+New World New Lynn,09:00,15,17
+New World New Lynn,10:00,14,15
+New World New Lynn,11:00,14,15
+New World New Lynn,14:00,15,15
+New World New Lynn,15:00,16,15
+New World New Lynn,16:00,17,16
+New World New Lynn,17:00,18,16
+New World Newmarket,08:00,25,22
+New World Newmarket,09:00,23,22
+New World Newmarket,10:00,22,21
+New World Newmarket,11:00,21,21
+New World Newmarket,14:00,22,22
+New World Newmarket,15:00,23,23
+New World Newmarket,16:00,24,26
+New World Newmarket,17:00,24,27
+New World Ormiston,08:00,37,41
+New World Ormiston,09:00,33,35
+New World Ormiston,10:00,31,31
+New World Ormiston,11:00,32,31
+New World Ormiston,14:00,33,33
+New World Ormiston,15:00,38,39
+New World Ormiston,16:00,45,51
+New World Ormiston,17:00,47,52
+New World Papakura,08:00,34,48
+New World Papakura,09:00,31,37
+New World Papakura,10:00,30,32
+New World Papakura,11:00,29,32
+New World Papakura,14:00,32,34
+New World Papakura,15:00,40,40
+New World Papakura,16:00,52,51
+New World Papakura,17:00,52,53
+New World Papatoetoe,08:00,27,27
+New World Papatoetoe,09:00,25,25
+New World Papatoetoe,10:00,23,23
+New World Papatoetoe,11:00,22,23
+New World Papatoetoe,14:00,23,25
+New World Papatoetoe,15:00,26,29
+New World Papatoetoe,16:00,32,38
+New World Papatoetoe,17:00,33,41
+New World Point Chevalier,08:00,18,18
+New World Point Chevalier,09:00,17,17
+New World Point Chevalier,10:00,16,16
+New World Point Chevalier,11:00,16,16
+New World Point Chevalier,14:00,16,17
+New World Point Chevalier,15:00,16,17
+New World Point Chevalier,16:00,17,18
+New World Point Chevalier,17:00,18,19
+New World Remuera,08:00,30,26
+New World Remuera,09:00,28,25
+New World Remuera,10:00,26,24
+New World Remuera,11:00,25,24
+New World Remuera,14:00,25,25
+New World Remuera,15:00,27,26
+New World Remuera,16:00,28,29
+New World Remuera,17:00,28,29
+New World Southmall,08:00,30,38
+New World Southmall,09:00,27,31
+New World Southmall,10:00,25,27
+New World Southmall,11:00,25,26
+New World Southmall,14:00,27,28
+New World Southmall,15:00,34,33
+New World Southmall,16:00,44,44
+New World Southmall,17:00,45,48
+New World Stonefields,08:00,33,33
+New World Stonefields,09:00,30,30
+New World Stonefields,10:00,28,29
+New World Stonefields,11:00,28,29
+New World Stonefields,14:00,28,30
+New World Stonefields,15:00,29,32
+New World Stonefields,16:00,32,36
+New World Stonefields,17:00,32,38
+New World Victoria Park,08:00,28,22
+New World Victoria Park,09:00,25,21
+New World Victoria Park,10:00,21,20
+New World Victoria Park,11:00,20,20
+New World Victoria Park,14:00,20,21
+New World Victoria Park,15:00,21,22
+New World Victoria Park,16:00,23,24
+New World Victoria Park,17:00,24,28
+Pak'nSave Albany,08:00,36,48
+Pak'nSave Albany,09:00,34,38
+Pak'nSave Albany,10:00,32,33
+Pak'nSave Albany,11:00,32,32
+Pak'nSave Albany,14:00,33,32
+Pak'nSave Albany,15:00,36,34
+Pak'nSave Albany,16:00,41,37
+Pak'nSave Albany,17:00,43,40
+Pak'nSave Botany,08:00,40,44
+Pak'nSave Botany,09:00,36,38
+Pak'nSave Botany,10:00,34,34
+Pak'nSave Botany,11:00,34,34
+Pak'nSave Botany,14:00,35,37
+Pak'nSave Botany,15:00,38,43
+Pak'nSave Botany,16:00,43,49
+Pak'nSave Botany,17:00,45,50
+Pak'nSave Clendon,08:00,32,36
+Pak'nSave Clendon,09:00,29,30
+Pak'nSave Clendon,10:00,27,27
+Pak'nSave Clendon,11:00,27,27
+Pak'nSave Clendon,14:00,28,28
+Pak'nSave Clendon,15:00,32,34
+Pak'nSave Clendon,16:00,39,45
+Pak'nSave Clendon,17:00,41,48
+Pak'nSave Glen Innes,08:00,39,39
+Pak'nSave Glen Innes,09:00,36,36
+Pak'nSave Glen Innes,10:00,34,35
+Pak'nSave Glen Innes,11:00,33,35
+Pak'nSave Glen Innes,14:00,34,36
+Pak'nSave Glen Innes,15:00,36,39
+Pak'nSave Glen Innes,16:00,38,43
+Pak'nSave Glen Innes,17:00,38,45
+Pak'nSave Highland Park,08:00,38,40
+Pak'nSave Highland Park,09:00,34,35
+Pak'nSave Highland Park,10:00,31,32
+Pak'nSave Highland Park,11:00,31,32
+Pak'nSave Highland Park,14:00,33,33
+Pak'nSave Highland Park,15:00,36,37
+Pak'nSave Highland Park,16:00,41,42
+Pak'nSave Highland Park,17:00,45,43
+Pak'nSave Henderson,08:00,25,36
+Pak'nSave Henderson,09:00,24,29
+Pak'nSave Henderson,10:00,24,25
+Pak'nSave Henderson,11:00,24,24
+Pak'nSave Henderson,14:00,25,25
+Pak'nSave Henderson,15:00,28,25
+Pak'nSave Henderson,16:00,34,27
+Pak'nSave Henderson,17:00,36,27
+Pak'nSave Lincoln Road,08:00,22,34
+Pak'nSave Lincoln Road,09:00,21,26
+Pak'nSave Lincoln Road,10:00,20,21
+Pak'nSave Lincoln Road,11:00,21,21
+Pak'nSave Lincoln Road,14:00,22,21
+Pak'nSave Lincoln Road,15:00,26,22
+Pak'nSave Lincoln Road,16:00,32,23
+Pak'nSave Lincoln Road,17:00,34,24
+Pak'nSave Mangere,08:00,22,19
+Pak'nSave Mangere,09:00,20,18
+Pak'nSave Mangere,10:00,18,17
+Pak'nSave Mangere,11:00,18,18
+Pak'nSave Mangere,14:00,18,19
+Pak'nSave Mangere,15:00,18,21
+Pak'nSave Mangere,16:00,19,25
+Pak'nSave Mangere,17:00,20,28
+Pak'nSave Manukau,08:00,28,30
+Pak'nSave Manukau,09:00,25,27
+Pak'nSave Manukau,10:00,23,24
+Pak'nSave Manukau,11:00,23,24
+Pak'nSave Manukau,14:00,24,25
+Pak'nSave Manukau,15:00,28,30
+Pak'nSave Manukau,16:00,35,41
+Pak'nSave Manukau,17:00,36,45
+Pak'nSave Mt Albert,08:00,13,14
+Pak'nSave Mt Albert,09:00,13,13
+Pak'nSave Mt Albert,10:00,13,13
+Pak'nSave Mt Albert,11:00,13,13
+Pak'nSave Mt Albert,14:00,13,13
+Pak'nSave Mt Albert,15:00,13,13
+Pak'nSave Mt Albert,16:00,13,14
+Pak'nSave Mt Albert,17:00,14,14
+Pak'nSave Ormiston,08:00,37,42
+Pak'nSave Ormiston,09:00,34,35
+Pak'nSave Ormiston,10:00,32,32
+Pak'nSave Ormiston,11:00,32,32
+Pak'nSave Ormiston,14:00,34,34
+Pak'nSave Ormiston,15:00,39,40
+Pak'nSave Ormiston,16:00,46,52
+Pak'nSave Ormiston,17:00,48,53
+Pak'nSave Papakura,08:00,33,45
+Pak'nSave Papakura,09:00,30,35
+Pak'nSave Papakura,10:00,29,31
+Pak'nSave Papakura,11:00,29,31
+Pak'nSave Papakura,14:00,31,33
+Pak'nSave Papakura,15:00,39,39
+Pak'nSave Papakura,16:00,51,50
+Pak'nSave Papakura,17:00,51,52
+Pak'nSave Royal Oak,08:00,18,16
+Pak'nSave Royal Oak,09:00,17,16
+Pak'nSave Royal Oak,10:00,15,15
+Pak'nSave Royal Oak,11:00,15,15
+Pak'nSave Royal Oak,14:00,15,16
+Pak'nSave Royal Oak,15:00,15,17
+Pak'nSave Royal Oak,16:00,16,19
+Pak'nSave Royal Oak,17:00,17,20
+Pak'nSave Sylvia Park,08:00,31,30
+Pak'nSave Sylvia Park,09:00,28,28
+Pak'nSave Sylvia Park,10:00,25,27
+Pak'nSave Sylvia Park,11:00,25,28
+Pak'nSave Sylvia Park,14:00,26,30
+Pak'nSave Sylvia Park,15:00,26,32
+Pak'nSave Sylvia Park,16:00,28,36
+Pak'nSave Sylvia Park,17:00,29,38
+Pak'nSave Wairau Road,08:00,37,38
+Pak'nSave Wairau Road,09:00,32,34
+Pak'nSave Wairau Road,10:00,29,30
+Pak'nSave Wairau Road,11:00,29,29
+Pak'nSave Wairau Road,14:00,30,30
+Pak'nSave Wairau Road,15:00,34,32
+Pak'nSave Wairau Road,16:00,40,36
+Pak'nSave Wairau Road,17:00,43,40
+Pak'nSave Westgate,08:00,23,37
+Pak'nSave Westgate,09:00,22,27
+Pak'nSave Westgate,10:00,22,22
+Pak'nSave Westgate,11:00,22,22
+Pak'nSave Westgate,14:00,23,22
+Pak'nSave Westgate,15:00,25,23
+Pak'nSave Westgate,16:00,30,23
+Pak'nSave Westgate,17:00,32,23
+Four Square Botany Junction,08:00,36,38
+Four Square Botany Junction,09:00,33,33
+Four Square Botany Junction,10:00,31,28
+Four Square Botany Junction,11:00,31,28
+Four Square Botany Junction,14:00,32,30
+Four Square Botany Junction,15:00,38,36
+Four Square Botany Junction,16:00,43,47
+Four Square Botany Junction,17:00,45,50
+Four Square Britomart,08:00,33,24
+Four Square Britomart,09:00,29,23
+Four Square Britomart,10:00,25,23
+Four Square Britomart,11:00,24,23
+Four Square Britomart,14:00,24,23
+Four Square Britomart,15:00,25,25
+Four Square Britomart,16:00,26,28
+Four Square Britomart,17:00,28,34
+Four Square Cockle Bay,08:00,46,47
+Four Square Cockle Bay,09:00,41,41
+Four Square Cockle Bay,10:00,39,38
+Four Square Cockle Bay,11:00,38,38
+Four Square Cockle Bay,14:00,40,40
+Four Square Cockle Bay,15:00,44,44
+Four Square Cockle Bay,16:00,49,49
+Four Square Cockle Bay,17:00,53,49
+Four Square Eden Terrace,08:00,20,16
+Four Square Eden Terrace,09:00,18,15
+Four Square Eden Terrace,10:00,16,15
+Four Square Eden Terrace,11:00,16,15
+Four Square Eden Terrace,14:00,16,16
+Four Square Eden Terrace,15:00,17,16
+Four Square Eden Terrace,16:00,18,18
+Four Square Eden Terrace,17:00,18,21
+Four Square Ellerslie,08:00,27,24
+Four Square Ellerslie,09:00,24,23
+Four Square Ellerslie,10:00,22,22
+Four Square Ellerslie,11:00,21,23
+Four Square Ellerslie,14:00,22,23
+Four Square Ellerslie,15:00,23,25
+Four Square Ellerslie,16:00,25,29
+Four Square Ellerslie,17:00,25,31
+Four Square Fair Price Henderson,08:00,26,39
+Four Square Fair Price Henderson,09:00,25,30
+Four Square Fair Price Henderson,10:00,25,25
+Four Square Fair Price Henderson,11:00,25,25
+Four Square Fair Price Henderson,14:00,27,25
+Four Square Fair Price Henderson,15:00,31,26
+Four Square Fair Price Henderson,16:00,36,28
+Four Square Fair Price Henderson,17:00,38,28
+Four Square Glen Eden,08:00,21,28
+Four Square Glen Eden,09:00,21,25
+Four Square Glen Eden,10:00,21,23
+Four Square Glen Eden,11:00,21,22
+Four Square Glen Eden,14:00,21,23
+Four Square Glen Eden,15:00,22,23
+Four Square Glen Eden,16:00,24,23
+Four Square Glen Eden,17:00,26,23
+Four Square Hobsonville,08:00,25,40
+Four Square Hobsonville,09:00,24,29
+Four Square Hobsonville,10:00,24,25
+Four Square Hobsonville,11:00,24,25
+Four Square Hobsonville,14:00,25,25
+Four Square Hobsonville,15:00,27,26
+Four Square Hobsonville,16:00,33,26
+Four Square Hobsonville,17:00,36,27
+Four Square Lancaster,08:00,42,41
+Four Square Lancaster,09:00,37,36
+Four Square Lancaster,10:00,34,33
+Four Square Lancaster,11:00,33,33
+Four Square Lancaster,14:00,34,33
+Four Square Lancaster,15:00,37,35
+Four Square Lancaster,16:00,43,39
+Four Square Lancaster,17:00,47,42
+Four Square Onehunga,08:00,17,15
+Four Square Onehunga,09:00,15,15
+Four Square Onehunga,10:00,13,15
+Four Square Onehunga,11:00,13,15
+Four Square Onehunga,14:00,13,16
+Four Square Onehunga,15:00,13,17
+Four Square Onehunga,16:00,13,19
+Four Square Onehunga,17:00,14,21
+Four Square Remuera,08:00,30,28
+Four Square Remuera,09:00,27,26
+Four Square Remuera,10:00,25,25
+Four Square Remuera,11:00,24,25
+Four Square Remuera,14:00,25,27
+Four Square Remuera,15:00,28,29
+Four Square Remuera,16:00,30,32
+Four Square Remuera,17:00,31,34
+Four Square Pakuranga Heights,08:00,35,34
+Four Square Pakuranga Heights,09:00,31,30
+Four Square Pakuranga Heights,10:00,28,29
+Four Square Pakuranga Heights,11:00,28,29
+Four Square Pakuranga Heights,14:00,29,30
+Four Square Pakuranga Heights,15:00,31,34
+Four Square Pakuranga Heights,16:00,35,39
+Four Square Pakuranga Heights,17:00,38,39
+Four Square St Heliers,08:00,43,37
+Four Square St Heliers,09:00,38,34
+Four Square St Heliers,10:00,35,33
+Four Square St Heliers,11:00,34,33
+Four Square St Heliers,14:00,34,34
+Four Square St Heliers,15:00,35,36
+Four Square St Heliers,16:00,36,42
+Four Square St Heliers,17:00,38,45
+Four Square Torbay,08:00,43,55
+Four Square Torbay,09:00,40,44
+Four Square Torbay,10:00,39,39
+Four Square Torbay,11:00,38,38
+Four Square Torbay,14:00,40,38
+Four Square Torbay,15:00,43,40
+Four Square Torbay,16:00,50,42
+Four Square Torbay,17:00,53,44
