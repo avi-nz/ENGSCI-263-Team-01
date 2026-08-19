@@ -1,0 +1,38 @@
+{
+  "weekday_baseline": {
+    "cost_mean": 41414.20292686771,
+    "cost_ci": [
+      41310.94790665535,
+      41517.45794708007
+    ],
+    "pct_met_mean": 1.0,
+    "pct_days_with_breach": 0.0
+  },
+  "weekday_fuel_reduction": {
+    "cost_mean": 34336.47559192727,
+    "cost_ci": [
+      34258.459336221225,
+      34414.491847633304
+    ],
+    "pct_met_mean": 0.9196759247713866,
+    "pct_days_with_breach": 0.0
+  },
+  "saturday_baseline": {
+    "cost_mean": 14853.953009992296,
+    "cost_ci": [
+      14805.483011019584,
+      14902.423008965008
+    ],
+    "pct_met_mean": 1.0,
+    "pct_days_with_breach": 0.0
+  },
+  "saturday_fuel_reduction": {
+    "cost_mean": 15231.34438497481,
+    "cost_ci": [
+      15181.516194684618,
+      15281.172575265
+    ],
+    "pct_met_mean": 1.0,
+    "pct_days_with_breach": 0.0
+  }
+}
