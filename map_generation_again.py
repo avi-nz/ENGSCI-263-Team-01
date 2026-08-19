@@ -111,17 +111,17 @@ map_generation(
     locations,
     "stored_routes/chosen_routes_sat_fr.txt",
     "stored_routes/leased_routes_sat_fr.txt",
-    "st_map_fr.html",
+    "st_map_fr_up.html",
 )
 map_generation(
     locations,
     "stored_routes/chosen_routes_weekdays.txt",
     "stored_routes/leased_routes_weekdays.txt",
-    "wkdays_map.html",
+    "wkdays_map_up.html",
 )
 map_generation(
     locations,
     "stored_routes/chosen_routes_weekdays_fr.txt",
     "stored_routes/leased_routes_weekdays_fr.txt",
-    "wkdays_map_fr.html",
+    "wkdays_map_fr_up.html",
 )
