@@ -389,40 +389,30 @@ if __name__ == "__main__":
     skipped_fr = load_skipped_stores("../stored_routes/skipped_stores_fr.txt")
     results_fr = run_simulation(
         chosen_fr, leased_fr, skipped_stores=skipped_fr,
-        demand_df=demand_df, multiples_path="../weekday_fr_route_multiples.csv",
+        demand_df=demand_df, multiples_path="../weekday_fr_route_multiples-2.csv",
         day_type="weekday", exclusion_cost_lookup=exclusion_cost_lookup,
         n_reps=1000,
     )
     all_results["weekday_fuel_reduction"] = summarise(results_fr, "Weekday — fuel reduction")
 
     # Baseline Saturday plan
-    # TEMPORARY: reusing weekday_route_multiples.csv until the team
-    # generates saturday_route_multiples.csv (real TomTom data for the
-    # Saturday chosen routes). Since Saturday's route stop-combinations
-    # differ from weekday's, most/all lookups here will miss the exact
-    # match and fall back to the pooled multiplier distribution rather
-    # than a route-specific anchor — coarser traffic modelling than
-    # weekday gets. Swap the path below once saturday_route_multiples.csv
-    # exists.
     chosen_sat = load_chosen_routes("../stored_routes/chosen_routes_sat.txt")
     leased_sat = load_chosen_routes("../stored_routes/leased_routes_sat.txt")
     results_sat_baseline = run_simulation(
         chosen_sat, leased_sat, skipped_stores=[],
-        demand_df=demand_df, multiples_path="../saturday_route_multiples.csv",
+        demand_df=demand_df, multiples_path="../saturday_route_multiples-2.csv",
         day_type="saturday", exclusion_cost_lookup=exclusion_cost_lookup,
         n_reps=1000,
     )
     all_results["saturday_baseline"] = summarise(results_sat_baseline, "Saturday — baseline")
 
     # Fuel-reduction Saturday plan
-    # TEMPORARY: same caveat as above — reusing weekday_fr_route_multiples.csv
-    # until saturday_fr_route_multiples.csv exists.
     chosen_sat_fr = load_chosen_routes("../stored_routes/chosen_routes_sat_fr.txt")
     leased_sat_fr = load_chosen_routes("../stored_routes/leased_routes_sat_fr.txt")
     skipped_sat_fr = load_skipped_stores("../stored_routes/skipped_stores_sat_fr.txt")
     results_sat_fr = run_simulation(
         chosen_sat_fr, leased_sat_fr, skipped_stores=skipped_sat_fr,
-        demand_df=demand_df, multiples_path="../saturday_route_multiples.csv",
+        demand_df=demand_df, multiples_path="../saturday_route_multiples-2.csv",
         day_type="saturday", exclusion_cost_lookup=exclusion_cost_lookup,
         n_reps=1000,
     )
