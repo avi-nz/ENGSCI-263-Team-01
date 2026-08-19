@@ -1,17 +1,17 @@
 RouteIndex,Stops,Pallets,OriginalEst_mins,08:00,09:00,10:00,11:00,14:00,15:00,16:00,17:00
-1,Origin -> New World Newmarket -> Pak 'n Save Sylvia Park -> New World Remuera -> Origin,8.0,216,66,70,75,80,81,81,80,77
-2,Origin -> New World Hobsonville -> Four Square Hobsonville -> Four Square Lancaster -> Pak 'n Save Westgate -> Origin,8.0,236,86,88,90,92,91,91,91,90
-3,Origin -> New World Point Chevalier -> Pak 'n Save Lincoln Road -> New World Mt Albert -> Origin,9.0,215,54,56,59,62,62,61,60,60
-4,Origin -> New World Victoria Park -> New World Long Bay -> New World Devonport -> New World Metro Queen St -> Origin,7.0,239,115,121,127,131,130,128,126,123
-5,Origin -> Pak 'n Save Clendon -> New World Southmall -> Origin,7.0,198,58,60,61,63,63,63,63,62
-6,Origin -> Pak 'n Save Highland Park -> New World Howick -> New World Stonefields -> Origin,8.0,238,81,85,89,92,92,91,90,88
-7,Origin -> Pak 'n Save Manukau -> New World Ormiston -> New World Papatoetoe -> Origin,9.0,232,72,74,77,79,79,79,79,78
-8,Origin -> Pak 'n Save Mt Albert -> Pak 'n Save Mangere -> Origin,10.0,232,52,53,54,55,55,55,55,55
-9,Origin -> Pak 'n Save Papakura -> New World Papakura -> Origin,7.0,209,62,63,65,67,67,66,66,66
-10,Origin -> Pak 'n Save Royal Oak -> Origin,6.0,134,27,28,30,32,33,32,32,31
-11,Origin -> Pak 'n Save Wairau Road -> New World Milford -> New World Birkenhead -> Origin,8.0,234,80,82,84,86,86,86,86,84
-12,Origin -> Four Square Glen Eden -> Pak 'n Save Henderson -> New World Green Bay -> Origin,9.0,220,63,64,66,68,68,68,67,67
-13,Origin -> Four Square St Heliers -> Pak 'n Save Glen Innes -> New World Eastridge -> Origin,8.0,239,74,76,79,82,81,81,81,80
-14,Origin -> New World Botany -> Pak 'n Save Botany -> Four Square Pakuranga Heights -> Origin,8.0,226,66,68,72,74,73,73,73,71
-15,Origin -> New World Mt Roskill -> Pak 'n Save Ormiston -> New World New Lynn -> Origin,8.0,208,80,83,86,89,88,88,88,87
-16,Origin -> New World Albany -> New World Browns Bay -> Pak 'n Save Albany -> Origin,7.0,225,81,84,87,90,89,88,88,87
+1,Origin -> New World Newmarket -> Pak 'n Save Sylvia Park -> New World Remuera -> Origin,8.0,216,72,73,77,82,84,84,83,81
+2,Origin -> New World Hobsonville -> Four Square Hobsonville -> Four Square Lancaster -> Pak 'n Save Westgate -> Origin,8.0,236,93,95,98,99,99,99,98,97
+3,Origin -> New World Point Chevalier -> Pak 'n Save Lincoln Road -> New World Mt Albert -> Origin,9.0,215,60,63,64,67,66,66,65,64
+4,Origin -> New World Victoria Park -> New World Long Bay -> New World Devonport -> New World Metro Queen St -> Origin,7.0,239,126,132,139,143,141,140,137,133
+5,Origin -> Pak 'n Save Clendon -> New World Southmall -> Origin,7.0,198,62,63,65,67,67,67,66,66
+6,Origin -> Pak 'n Save Highland Park -> New World Howick -> New World Stonefields -> Origin,8.0,238,89,93,97,101,100,99,98,96
+7,Origin -> Pak 'n Save Manukau -> New World Ormiston -> New World Papatoetoe -> Origin,9.0,232,77,80,82,85,85,85,84,84
+8,Origin -> Pak 'n Save Mt Albert -> Pak 'n Save Mangere -> Origin,10.0,232,55,56,57,58,58,58,58,58
+9,Origin -> Pak 'n Save Papakura -> New World Papakura -> Origin,7.0,209,68,69,72,74,73,73,73,72
+10,Origin -> Pak 'n Save Royal Oak -> Origin,6.0,134,29,30,32,34,35,34,34,33
+11,Origin -> Pak 'n Save Wairau Road -> New World Milford -> New World Birkenhead -> Origin,8.0,234,85,87,90,92,92,92,91,90
+12,Origin -> Four Square Glen Eden -> Pak 'n Save Henderson -> New World Green Bay -> Origin,9.0,220,67,70,72,72,72,72,72,71
+13,Origin -> Four Square St Heliers -> Pak 'n Save Glen Innes -> New World Eastridge -> Origin,8.0,239,79,82,85,88,88,87,87,85
+14,Origin -> New World Botany -> Pak 'n Save Botany -> Four Square Pakuranga Heights -> Origin,8.0,226,71,74,77,80,79,79,78,77
+15,Origin -> New World Mt Roskill -> Pak 'n Save Ormiston -> New World New Lynn -> Origin,8.0,208,88,92,96,98,98,98,97,95
+16,Origin -> New World Albany -> New World Browns Bay -> Pak 'n Save Albany -> Origin,7.0,225,89,92,95,98,97,96,96,94
