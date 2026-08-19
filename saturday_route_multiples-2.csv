@@ -1,0 +1,17 @@
+RouteIndex,Stops,NoTraffic_mins,08:00,09:00,10:00,11:00,14:00,15:00,16:00,17:00
+1,Origin -> New World Newmarket -> Pak 'n Save Sylvia Park -> New World Remuera -> Origin,78.64,0.9156,0.9283,0.9791,1.0427,1.0682,1.0682,1.0554,1.03
+2,Origin -> New World Hobsonville -> Four Square Hobsonville -> Four Square Lancaster -> Pak 'n Save Westgate -> Origin,114.34,0.8133,0.8308,0.8571,0.8658,0.8658,0.8658,0.8571,0.8483
+3,Origin -> New World Point Chevalier -> Pak 'n Save Lincoln Road -> New World Mt Albert -> Origin,65.76,0.9125,0.9581,0.9733,1.0189,1.0037,1.0037,0.9885,0.9733
+4,Origin -> New World Victoria Park -> New World Long Bay -> New World Devonport -> New World Metro Queen St -> Origin,146.2,0.8618,0.9029,0.9507,0.9781,0.9644,0.9576,0.9371,0.9097
+5,Origin -> Pak 'n Save Clendon -> New World Southmall -> Origin,71.8,0.8635,0.8775,0.9053,0.9332,0.9332,0.9332,0.9193,0.9193
+6,Origin -> Pak 'n Save Highland Park -> New World Howick -> New World Stonefields -> Origin,95.4,0.933,0.9749,1.0168,1.0587,1.0483,1.0378,1.0273,1.0063
+7,Origin -> Pak 'n Save Manukau -> New World Ormiston -> New World Papatoetoe -> Origin,78.95,0.9753,1.0133,1.0386,1.0766,1.0766,1.0766,1.064,1.064
+8,Origin -> Pak 'n Save Mt Albert -> Pak 'n Save Mangere -> Origin,51.77,1.0623,1.0816,1.1009,1.1202,1.1202,1.1202,1.1202,1.1202
+9,Origin -> Pak 'n Save Papakura -> New World Papakura -> Origin,83.51,0.8142,0.8262,0.8621,0.8861,0.8741,0.8741,0.8741,0.8621
+10,Origin -> Pak 'n Save Royal Oak -> Origin,26.89,1.0784,1.1156,1.1899,1.2643,1.3015,1.2643,1.2643,1.2271
+11,Origin -> Pak 'n Save Wairau Road -> New World Milford -> New World Birkenhead -> Origin,96.6,0.8799,0.9006,0.9317,0.9524,0.9524,0.9524,0.942,0.9317
+12,Origin -> Four Square Glen Eden -> Pak 'n Save Henderson -> New World Green Bay -> Origin,68.96,0.9715,1.015,1.044,1.044,1.044,1.044,1.044,1.0295
+13,Origin -> Four Square St Heliers -> Pak 'n Save Glen Innes -> New World Eastridge -> Origin,91.08,0.8673,0.9003,0.9332,0.9662,0.9662,0.9552,0.9552,0.9332
+14,Origin -> New World Botany -> Pak 'n Save Botany -> Four Square Pakuranga Heights -> Origin,90.1,0.788,0.8213,0.8546,0.8879,0.8768,0.8768,0.8657,0.8546
+15,Origin -> New World Mt Roskill -> Pak 'n Save Ormiston -> New World New Lynn -> Origin,94.56,0.9306,0.9729,1.0152,1.0364,1.0364,1.0364,1.0258,1.0046
+16,Origin -> New World Albany -> New World Browns Bay -> Pak 'n Save Albany -> Origin,106.18,0.8382,0.8665,0.8947,0.923,0.9136,0.9041,0.9041,0.8853
