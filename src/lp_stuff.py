@@ -1,4 +1,4 @@
-from feasible_routes import *
+from src.feasible_routes import *
 from pulp import *
 import math
 import json
@@ -111,9 +111,9 @@ for v in prob.variables():
       chosen_routes.append(flat_routes[int(v.name[6:])])
       chosen_routes[-1].update({"cost" : route_cost[int(v.name[6:])]})
 
-with open("stored_routes/chosen_routes_weekdays.txt", "w") as file:
+with open("../stored_routes/chosen_routes_weekdays.txt", "w") as file:
   json.dump(chosen_routes, file)
-with open("stored_routes/leased_routes_weekdays.txt", "w") as file:
+with open("../stored_routes/leased_routes_weekdays.txt", "w") as file:
   json.dump(leased_routes, file)
 
 print("Total Cost = ", value(prob.objective))
@@ -188,11 +188,11 @@ for v in prob_fr.variables():
     elif v.name[0:7] == "Skipped":
       skipped_stores.append(v.name[14:])
 
-with open("stored_routes/chosen_routes_weekdays_fr.txt", "w") as file:
+with open("../stored_routes/chosen_routes_weekdays_fr.txt", "w") as file:
   json.dump(chosen_routes, file)
-with open("stored_routes/leased_routes_weekdays_fr.txt", "w") as file:
+with open("../stored_routes/leased_routes_weekdays_fr.txt", "w") as file:
   json.dump(leased_routes, file) #should be empty
-with open("stored_routes/skipped_stores_fr.txt", "w") as file:
+with open("../stored_routes/skipped_stores_fr.txt", "w") as file:
   json.dump(skipped_stores, file)
 
 

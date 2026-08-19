@@ -258,9 +258,9 @@ def main():
 
     session = requests.Session()
 
-    process_file(args.key, args.weekday, weekday_date, "weekday_route_times.csv", session)
-    process_file(args.key, args.weekday_fr, weekday_date, "weekday_fr_route_times.csv", session)
-    process_file(args.key, args.sat, saturday_date, "saturday_route_times.csv", session)
+    process_file(args.key, args.weekday, weekday_date, "../weekday_route_times.csv", session)
+    process_file(args.key, args.weekday_fr, weekday_date, "../weekday_fr_route_times.csv", session)
+    process_file(args.key, args.sat, saturday_date, "../saturday_route_times.csv", session)
 
     print("\nDone. Files written: weekday_route_times.csv, weekday_fr_route_times.csv, saturday_route_times.csv")
 

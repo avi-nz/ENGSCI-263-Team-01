@@ -1,8 +1,7 @@
 import json
 import folium
 import openrouteservice
-import pandas as pd
-from load_data import load_locations
+from src.load_data import load_locations
 
 # Initialize OpenRouteService client
 # Replace 'YOUR_API_KEY' with your actual OpenRouteService API key

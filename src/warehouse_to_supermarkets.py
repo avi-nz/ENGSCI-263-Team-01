@@ -215,8 +215,8 @@ def main():
     saturday_date = args.saturday_date or next_weekday_date(today, 5).isoformat()  # Sat
 
     session = requests.Session()
-    run_day(args.key, weekday_date, "Weekday", "weekday_times.csv", session)
-    run_day(args.key, saturday_date, "Saturday", "saturday_times.csv", session)
+    run_day(args.key, weekday_date, "Weekday", "../weekday_times.csv", session)
+    run_day(args.key, saturday_date, "Saturday", "../saturday_times.csv", session)
 
     print("\nDone. Files written: weekday_times.csv, saturday_times.csv")
 

@@ -7,7 +7,7 @@ HOLIDAYS = ["2026-06-01"]  # King's Birthday
 
 def load_demand_raw():
     """Wide format, exactly as it is on disk."""
-    return pd.read_csv("data/FoodstuffsDemand2026.csv")
+    return pd.read_csv("../data/FoodstuffsDemand2026.csv")
 
 
 def melt_demand(df):
@@ -42,8 +42,8 @@ def load_demand():
 
 
 def load_locations():
-    return pd.read_csv("data/FoodstuffsLocations.csv")
+    return pd.read_csv("../data/FoodstuffsLocations.csv")
 
 
 def load_durations():
-    return pd.read_csv("data/FoodstuffsDurations2026.csv", index_col=0)
+    return pd.read_csv("../data/FoodstuffsDurations2026.csv", index_col=0)

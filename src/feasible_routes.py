@@ -1,4 +1,4 @@
-from demand_averages import weekday_average, saturday_average
+from src.demand_averages import weekday_average, saturday_average
 from load_data import load_durations, load_demand
 from typing import List, Dict, Any
 import pandas as pd

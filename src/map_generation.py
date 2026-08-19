@@ -1,7 +1,6 @@
 import json
 import folium
-import pandas as pd
-from load_data import load_locations
+from src.load_data import load_locations
 
 # Load data
 locations = load_locations()

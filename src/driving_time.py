@@ -1,4 +1,4 @@
-from demand_averages import weekday_average, saturday_average
+from src.demand_averages import weekday_average, saturday_average
 from load_data import load_durations, load_demand
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -55,5 +55,5 @@ ax.set_xlabel("Stores visited")
 ax.set_ylabel("Remaining budget after unloading (min)")
 ax.set_title("Trip budget consumed by unloading, by route size")
 ax.legend()
-plt.savefig('plots/driving_budget_graph.png')
+plt.savefig('../plots/driving_budget_graph.png')
 plt.show()

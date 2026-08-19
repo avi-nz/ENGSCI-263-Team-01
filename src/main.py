@@ -1,4 +1,4 @@
-from load_data import load_locations, load_demand, load_durations
+from src.load_data import load_locations, load_demand, load_durations
 
 # Load the data into DataFrames
 locations_df = load_locations()
